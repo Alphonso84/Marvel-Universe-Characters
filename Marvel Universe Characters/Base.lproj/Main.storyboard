@@ -44,7 +44,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <visualEffectView opaque="NO" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXt-1M-9Qs">
+                                                <visualEffectView opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXt-1M-9Qs">
                                                     <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xYn-Fc-dYo">
                                                         <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
@@ -57,21 +57,28 @@
                                                                     <constraint firstAttribute="width" constant="180" id="kpr-9b-kAt"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="22"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWl-EL-7w7">
-                                                                <rect key="frame" x="27" y="332" width="256" height="203"/>
+                                                                <rect key="frame" x="27" y="305" width="256" height="203"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="203" id="Xu3-gS-bwO"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpiderMan" translatesAutoresizingMaskIntoConstraints="NO" id="LVG-Y7-uDI">
                                                                 <rect key="frame" x="42" y="22" width="226" height="216"/>
                                                             </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data provided by Marvel. © 2014 Marvel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-2a-WRd">
+                                                                <rect key="frame" x="17" y="526" width="268" height="21"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="nWl-EL-7w7" secondAttribute="trailing" constant="20" id="4t7-uM-Ezy"/>
@@ -79,15 +86,15 @@
                                                             <constraint firstItem="LVG-Y7-uDI" firstAttribute="centerX" secondItem="jMG-Yz-E6m" secondAttribute="centerX" id="DtS-OT-Vsj"/>
                                                             <constraint firstItem="jMG-Yz-E6m" firstAttribute="leading" secondItem="xYn-Fc-dYo" secondAttribute="leading" constant="65" id="JIu-Y5-gGP"/>
                                                             <constraint firstItem="jMG-Yz-E6m" firstAttribute="centerX" secondItem="nWl-EL-7w7" secondAttribute="centerX" id="c7d-0j-Qgx"/>
-                                                            <constraint firstItem="nWl-EL-7w7" firstAttribute="top" secondItem="jMG-Yz-E6m" secondAttribute="bottom" constant="35" id="k4s-Ew-FtY"/>
-                                                            <constraint firstAttribute="bottom" secondItem="nWl-EL-7w7" secondAttribute="bottom" constant="20" id="lBd-2P-4RJ"/>
+                                                            <constraint firstItem="nWl-EL-7w7" firstAttribute="top" secondItem="jMG-Yz-E6m" secondAttribute="bottom" constant="8" id="k4s-Ew-FtY"/>
+                                                            <constraint firstAttribute="bottom" secondItem="nWl-EL-7w7" secondAttribute="bottom" constant="47" id="lBd-2P-4RJ"/>
                                                             <constraint firstItem="jMG-Yz-E6m" firstAttribute="top" secondItem="LVG-Y7-uDI" secondAttribute="bottom" constant="29" id="ncD-mQ-CZe"/>
                                                             <constraint firstItem="LVG-Y7-uDI" firstAttribute="leading" secondItem="xYn-Fc-dYo" secondAttribute="leading" constant="42" id="s5k-DX-b2i"/>
                                                             <constraint firstItem="LVG-Y7-uDI" firstAttribute="top" secondItem="xYn-Fc-dYo" secondAttribute="top" constant="22" id="vQp-yU-5z1"/>
                                                         </constraints>
                                                     </view>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <blurEffect style="light"/>
+                                                    <blurEffect style="regular"/>
                                                 </visualEffectView>
                                             </subviews>
                                         </view>
