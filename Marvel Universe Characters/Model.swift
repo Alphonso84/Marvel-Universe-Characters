@@ -7,3 +7,11 @@
 //
 
 import Foundation
+import UIKit
+
+struct Hero {
+    var name: String
+    var bio: String
+    var pic: UIImage
+    
+}
