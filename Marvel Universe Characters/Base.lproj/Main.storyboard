@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,47 +51,53 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spider Man" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMG-Yz-E6m">
-                                                                <rect key="frame" x="65" y="267" width="180" height="30"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpiderMan" translatesAutoresizingMaskIntoConstraints="NO" id="LVG-Y7-uDI">
+                                                                <rect key="frame" x="42" y="22" width="226" height="220"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data provided by Marvel. © 2014 Marvel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-2a-WRd">
+                                                                <rect key="frame" x="17" y="526" width="268" height="21"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="30" id="Ffb-Qt-gHu"/>
-                                                                    <constraint firstAttribute="width" constant="180" id="kpr-9b-kAt"/>
+                                                                    <constraint firstAttribute="height" constant="21" id="wL2-Rv-b2q"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGy-t2-pNa">
+                                                                <rect key="frame" x="35" y="289" width="240" height="216"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="216" id="ex9-5d-Nm6"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spider Man" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMG-Yz-E6m">
+                                                                <rect key="frame" x="61" y="250" width="180" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="180" id="CTE-9b-Blf"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="eVX-gy-iG5"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="22"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="70" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWl-EL-7w7">
-                                                                <rect key="frame" x="27" y="305" width="256" height="203"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="203" id="Xu3-gS-bwO"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpiderMan" translatesAutoresizingMaskIntoConstraints="NO" id="LVG-Y7-uDI">
-                                                                <rect key="frame" x="42" y="22" width="226" height="216"/>
-                                                            </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data provided by Marvel. © 2014 Marvel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-2a-WRd">
-                                                                <rect key="frame" x="17" y="526" width="268" height="21"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="nWl-EL-7w7" secondAttribute="trailing" constant="20" id="4t7-uM-Ezy"/>
-                                                            <constraint firstItem="nWl-EL-7w7" firstAttribute="leading" secondItem="xYn-Fc-dYo" secondAttribute="leading" constant="27" id="5Qx-hz-kdg"/>
-                                                            <constraint firstItem="LVG-Y7-uDI" firstAttribute="centerX" secondItem="jMG-Yz-E6m" secondAttribute="centerX" id="DtS-OT-Vsj"/>
-                                                            <constraint firstItem="jMG-Yz-E6m" firstAttribute="leading" secondItem="xYn-Fc-dYo" secondAttribute="leading" constant="65" id="JIu-Y5-gGP"/>
-                                                            <constraint firstItem="jMG-Yz-E6m" firstAttribute="centerX" secondItem="nWl-EL-7w7" secondAttribute="centerX" id="c7d-0j-Qgx"/>
-                                                            <constraint firstItem="nWl-EL-7w7" firstAttribute="top" secondItem="jMG-Yz-E6m" secondAttribute="bottom" constant="8" id="k4s-Ew-FtY"/>
-                                                            <constraint firstAttribute="bottom" secondItem="nWl-EL-7w7" secondAttribute="bottom" constant="47" id="lBd-2P-4RJ"/>
-                                                            <constraint firstItem="jMG-Yz-E6m" firstAttribute="top" secondItem="LVG-Y7-uDI" secondAttribute="bottom" constant="29" id="ncD-mQ-CZe"/>
-                                                            <constraint firstItem="LVG-Y7-uDI" firstAttribute="leading" secondItem="xYn-Fc-dYo" secondAttribute="leading" constant="42" id="s5k-DX-b2i"/>
-                                                            <constraint firstItem="LVG-Y7-uDI" firstAttribute="top" secondItem="xYn-Fc-dYo" secondAttribute="top" constant="22" id="vQp-yU-5z1"/>
+                                                            <constraint firstItem="pFD-2a-WRd" firstAttribute="leading" secondItem="xYn-Fc-dYo" secondAttribute="leading" constant="17" id="74b-P5-fev"/>
+                                                            <constraint firstItem="pFD-2a-WRd" firstAttribute="top" secondItem="lGy-t2-pNa" secondAttribute="bottom" constant="21" id="Ehv-RX-vPX"/>
+                                                            <constraint firstItem="lGy-t2-pNa" firstAttribute="top" secondItem="jMG-Yz-E6m" secondAttribute="bottom" constant="9" id="GoV-XL-C0p"/>
+                                                            <constraint firstItem="jMG-Yz-E6m" firstAttribute="leading" secondItem="xYn-Fc-dYo" secondAttribute="leading" constant="61" id="Ixh-9W-uKi"/>
+                                                            <constraint firstItem="LVG-Y7-uDI" firstAttribute="top" secondItem="xYn-Fc-dYo" secondAttribute="top" constant="22" id="JtN-gA-WNW"/>
+                                                            <constraint firstAttribute="trailing" secondItem="lGy-t2-pNa" secondAttribute="trailing" constant="28" id="Kmi-If-gO6"/>
+                                                            <constraint firstItem="pFD-2a-WRd" firstAttribute="bottom" secondItem="xYn-Fc-dYo" secondAttribute="bottomMargin" id="U9f-qU-DrE"/>
+                                                            <constraint firstItem="lGy-t2-pNa" firstAttribute="leading" secondItem="xYn-Fc-dYo" secondAttribute="leading" constant="35" id="UDz-kb-6Dl"/>
+                                                            <constraint firstItem="LVG-Y7-uDI" firstAttribute="centerX" secondItem="lGy-t2-pNa" secondAttribute="centerX" id="WKh-Ob-Kc1"/>
+                                                            <constraint firstItem="jMG-Yz-E6m" firstAttribute="centerX" secondItem="xYn-Fc-dYo" secondAttribute="centerX" id="ZRZ-MK-FD9"/>
+                                                            <constraint firstItem="jMG-Yz-E6m" firstAttribute="top" secondItem="LVG-Y7-uDI" secondAttribute="bottom" constant="8" symbolic="YES" id="b4C-Wr-SdV"/>
+                                                            <constraint firstItem="jMG-Yz-E6m" firstAttribute="centerX" secondItem="pFD-2a-WRd" secondAttribute="centerX" id="yk2-i3-Sgx"/>
+                                                            <constraint firstItem="LVG-Y7-uDI" firstAttribute="leading" secondItem="xYn-Fc-dYo" secondAttribute="leading" constant="42" id="zi3-7I-foT"/>
                                                         </constraints>
                                                     </view>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -105,7 +112,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="cellLabel" destination="jMG-Yz-E6m" id="nFJ-7p-Wma"/>
-                                            <outlet property="cellTextField" destination="nWl-EL-7w7" id="nX5-j5-odL"/>
+                                            <outlet property="cellTextField" destination="lGy-t2-pNa" id="cYR-kM-XeF"/>
                                             <outlet property="imageCell" destination="LVG-Y7-uDI" id="FZ8-zO-Ve4"/>
                                         </connections>
                                     </collectionViewCell>
@@ -131,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="62"/>
+            <point key="canvasLocation" x="48.799999999999997" y="61.330049261083744"/>
         </scene>
     </scenes>
     <resources>

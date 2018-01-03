@@ -11,7 +11,7 @@ import UIKit
 class MyCell: UICollectionViewCell {
 var imageURLString = ""
 @IBOutlet weak var imageCell: UIImageView!
-@IBOutlet weak var cellTextField: UILabel!
+@IBOutlet weak var cellTextField: UITextView!
 @IBOutlet weak var cellLabel: UILabel!
 
 func viewDidLoad() {
