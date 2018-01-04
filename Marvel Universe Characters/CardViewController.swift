@@ -21,11 +21,14 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     let Hulk = Hero.init(name: "Hulk", bio: "Caught in a gamma bomb explosion while trying to save the life of a teenager, Dr. Bruce Banner was transformed into the incredibly powerful creature called the Hulk. An all too often misunderstood hero, the angrier the Hulk gets, the stronger the Hulk gets. ", pic: #imageLiteral(resourceName: "Hulk"))
     
+    let Falcon = Hero.init(name: "Falcon", bio: "With a mental connection to all birds and a suit that gives him wings to fly, The Falcon has been both the partner to Captain America and an Avenger himself. Whether as a super hero or in his secret identity of social worker Sam Wilson, The Falcon dedicates his life to standing up for others", pic: #imageLiteral(resourceName: "Falcon"))
+    
     let HawkEye = Hero(name: "Hawk Eye", bio: "Hawk-Eye(Ronin) is a world-class archer and marksman. His above average reflexes and hand-eye-coordination make him the most proficient archer ever known. He is also trained to throw knifes, darts, balls, bolas and boomerangs. He is natural athlete. He is also formidable unarmed combatant, thanks largely for longtime combat training with Captain America. He also has extensive training as an acrobat and aerialist. He is highly capable and charismatic team leader and a shrewd combat strategist, albeit sometimes reckless. Barton is also talented weapon designer, particularly well-versed in variations on basic traditional weaponry such as arrows, blades and hand-thrown projectiles. He has designed and crafted crescent darts, boomerangs, throwing irons, bolas, axes, custom arrows and bows. he is experienced motorcycle rider, Barton was one of the of the most proficient and daring pilots of the Avengers' supersonic Quinjets and other aircraft. He was once 80% deaf due to an injury, but his hearing was restored during his rebirth on Franklin Richards' Counter-Earth.", pic: #imageLiteral(resourceName: "HawkEye"))
     
     let BlackPanther = Hero(name: "Black Panther", bio: "Black Panther (T'Challa) is a brilliant tactician, strategist, scientist, tracker and a master of all forms of unarmed combat whose unique hybrid fighting style incorporates acrobatics and aspects of animal mimicry. T'Challa being a royal descendent of a warrior race is also a master of armed combat, able to use a variety of weapons but prefers unarmed combat. He is a master planner who always thinks several steps ahead and will go to extreme measures to achieve his goals and protect the kingdom of Wakanda.", pic: #imageLiteral(resourceName: "BlackPanther"))
     
     let BlackWidow = Hero(name: "Black Widow", bio: "Natasha Romanova, known by many aliases, is an expert spy, athlete, and assassin. Trained at a young age by the KGB's infamous Red Room Academy, the Black Widow was formerly an enemy to the Avengers. She later became their ally after breaking out of the U.S.S.R.'s grasp, and also serves as a top S.H.I.E.L.D. agent.", pic: #imageLiteral(resourceName: "BlackWidow"))
+    
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -64,10 +67,12 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         Heroes.append(Spiderman)
         Heroes.append(Ironman)
         Heroes.append(CaptAmerica)
+        Heroes.append(Falcon)
         Heroes.append(Hulk)
         Heroes.append(HawkEye)
         Heroes.append(BlackPanther)
         Heroes.append(BlackWidow)
+        
        
        
     }

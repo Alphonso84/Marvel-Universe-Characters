@@ -17,6 +17,8 @@
 		89586A371FFCC19A00313FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89586A351FFCC19A00313FEA /* LaunchScreen.storyboard */; };
 		89586A3F1FFCCEA200313FEA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89586A3E1FFCCEA200313FEA /* Model.swift */; };
 		89586A411FFCD05A00313FEA /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89586A401FFCD05A00313FEA /* CardViewCell.swift */; };
+		8965B2F31FFEDFB100D61AEF /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B2F21FFEDFB100D61AEF /* MenuView.swift */; };
+		8965B2F51FFEEAD200D61AEF /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B2F41FFEEAD200D61AEF /* MenuViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		89586A381FFCC19A00313FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89586A3E1FFCCEA200313FEA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		89586A401FFCD05A00313FEA /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		8965B2F21FFEDFB100D61AEF /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		8965B2F41FFEEAD200D61AEF /* MenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				89586A3E1FFCCEA200313FEA /* Model.swift */,
 				8921E1701FFE186900752987 /* Model.xcdatamodeld */,
 				8921E16E1FFE051B00752987 /* API.swift */,
+				8965B2F21FFEDFB100D61AEF /* MenuView.swift */,
+				8965B2F41FFEEAD200D61AEF /* MenuViewCell.swift */,
 				89586A2E1FFCC19A00313FEA /* CardViewController.swift */,
 				89586A401FFCD05A00313FEA /* CardViewCell.swift */,
 				8921E1731FFEB39E00752987 /* HeroController.swift */,
@@ -152,9 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				89586A3F1FFCCEA200313FEA /* Model.swift in Sources */,
+				8965B2F31FFEDFB100D61AEF /* MenuView.swift in Sources */,
 				89586A2F1FFCC19A00313FEA /* CardViewController.swift in Sources */,
 				8921E1741FFEB39E00752987 /* HeroController.swift in Sources */,
 				89586A411FFCD05A00313FEA /* CardViewCell.swift in Sources */,
+				8965B2F51FFEEAD200D61AEF /* MenuViewCell.swift in Sources */,
 				89586A2D1FFCC19A00313FEA /* AppDelegate.swift in Sources */,
 				8921E16F1FFE051B00752987 /* API.swift in Sources */,
 				8921E1721FFE186900752987 /* Model.xcdatamodeld in Sources */,
