@@ -15,6 +15,14 @@ var imageURLString = ""
 @IBOutlet weak var cellLabel: UILabel!
 
 func viewDidLoad() {
+    viewDidLayoutSubviews()
+    }
     
+    func viewDidAppear() {
+        
+    }
+    
+    func viewDidLayoutSubviews() {
+        cellTextField.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
     }
 }

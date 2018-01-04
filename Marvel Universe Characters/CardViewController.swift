@@ -7,10 +7,12 @@
 //
 import Foundation
 import UIKit
+import CoreData
 
 var Heroes = [Hero]()
 
 class CardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
    let Spiderman = Hero.init(name: "Spider Man", bio: "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.", pic: #imageLiteral(resourceName: "SpiderMan"))
     
    let Ironman = Hero.init(name: "Iron Man", bio: "Wounded, captured and forced to build a weapon by his enemies, billionaire industrialist Tony Stark instead created an advanced suit of armor to save his life and escape captivity. Now with a new outlook on life, Tony uses his money and intelligence to make the world a safer, better place as Iron Man.", pic: #imageLiteral(resourceName: "IronMan"))
@@ -28,12 +30,13 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Heroes.count
-    }
+        }
     
     //Cell Config
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: MyCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyCell
+        
         cell.cellLabel.text = Heroes[indexPath.row].name
         cell.cellTextField.text = Heroes[indexPath.row].bio
         cell.imageCell.image = Heroes[indexPath.row].pic
@@ -41,7 +44,9 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
+        let detailController = storyboard?.instantiateViewController(withIdentifier: "HeroController") as! PhotosDetailController
+        detailController.photo = UIImage(named: array[indexPath.row] + ".jpg")
+        navigationController?.show(detailController, sender: collectionView)
     }
     
     func viewWillAppear() {
@@ -49,6 +54,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     override func viewDidLoad() {
+       
         Heroes.append(Spiderman)
         Heroes.append(Ironman)
         Heroes.append(CaptAmerica)

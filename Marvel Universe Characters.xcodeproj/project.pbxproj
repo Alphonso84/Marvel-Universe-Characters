@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8921E16F1FFE051B00752987 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921E16E1FFE051B00752987 /* API.swift */; };
+		8921E1721FFE186900752987 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8921E1701FFE186900752987 /* Model.xcdatamodeld */; };
+		8921E1741FFEB39E00752987 /* HeroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921E1731FFEB39E00752987 /* HeroController.swift */; };
 		89586A2D1FFCC19A00313FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89586A2C1FFCC19A00313FEA /* AppDelegate.swift */; };
 		89586A2F1FFCC19A00313FEA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89586A2E1FFCC19A00313FEA /* CardViewController.swift */; };
 		89586A321FFCC19A00313FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89586A301FFCC19A00313FEA /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8921E16E1FFE051B00752987 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8921E1711FFE186900752987 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8921E1731FFEB39E00752987 /* HeroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroController.swift; sourceTree = "<group>"; };
 		89586A291FFCC19900313FEA /* Marvel Universe Characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel Universe Characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89586A2C1FFCC19A00313FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89586A2E1FFCC19A00313FEA /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
@@ -60,8 +66,11 @@
 			children = (
 				89586A2C1FFCC19A00313FEA /* AppDelegate.swift */,
 				89586A3E1FFCCEA200313FEA /* Model.swift */,
+				8921E1701FFE186900752987 /* Model.xcdatamodeld */,
+				8921E16E1FFE051B00752987 /* API.swift */,
 				89586A2E1FFCC19A00313FEA /* CardViewController.swift */,
 				89586A401FFCD05A00313FEA /* CardViewCell.swift */,
+				8921E1731FFEB39E00752987 /* HeroController.swift */,
 				89586A301FFCC19A00313FEA /* Main.storyboard */,
 				89586A331FFCC19A00313FEA /* Assets.xcassets */,
 				89586A351FFCC19A00313FEA /* LaunchScreen.storyboard */,
@@ -144,8 +153,11 @@
 			files = (
 				89586A3F1FFCCEA200313FEA /* Model.swift in Sources */,
 				89586A2F1FFCC19A00313FEA /* CardViewController.swift in Sources */,
+				8921E1741FFEB39E00752987 /* HeroController.swift in Sources */,
 				89586A411FFCD05A00313FEA /* CardViewCell.swift in Sources */,
 				89586A2D1FFCC19A00313FEA /* AppDelegate.swift in Sources */,
+				8921E16F1FFE051B00752987 /* API.swift in Sources */,
+				8921E1721FFE186900752987 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +342,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8921E1701FFE186900752987 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8921E1711FFE186900752987 /* Model.xcdatamodel */,
+			);
+			currentVersion = 8921E1711FFE186900752987 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 89586A211FFCC19900313FEA /* Project object */;
 }
