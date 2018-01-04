@@ -9,7 +9,16 @@
 import Foundation
 import UIKit
 
+
 class HeroController: UIViewController {
     
+    @IBOutlet weak var detailBackGround: UIImageView!
+    
+    var detailImage = UIImage()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        detailBackGround.image = detailImage
+    }
     
 }

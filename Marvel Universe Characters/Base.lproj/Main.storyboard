@@ -128,27 +128,64 @@
             </objects>
             <point key="canvasLocation" x="48.799999999999997" y="61.330049261083744"/>
         </scene>
-        <!--Hero Controller-->
+        <!--HeroController-->
         <scene sceneID="cMg-80-baD">
             <objects>
-                <viewController storyboardIdentifier="HeroController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dTI-tC-DnR" customClass="HeroController" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HeroController" title="HeroController" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dTI-tC-DnR" customClass="HeroController" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lJU-an-Mwz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gAl-5Q-tVZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avengers" translatesAutoresizingMaskIntoConstraints="NO" id="jH3-Os-pbU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
+                            <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="869-3u-oh5">
+                                <rect key="frame" x="33" y="108" width="308" height="536"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rlF-26-C2H">
+                                    <rect key="frame" x="0.0" y="0.0" width="308" height="536"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gAl-5Q-tVZ">
+                                <rect key="frame" x="33" y="108" width="308" height="536"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnK-9y-KuK">
+                                <rect key="frame" x="16" y="44" width="62" height="43"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="a5K-Dz-8iJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gAl-5Q-tVZ" secondAttribute="trailing" id="WrQ-Wj-iNU"/>
-                            <constraint firstAttribute="bottom" secondItem="gAl-5Q-tVZ" secondAttribute="bottom" id="owJ-cZ-swQ"/>
-                            <constraint firstItem="gAl-5Q-tVZ" firstAttribute="top" secondItem="lJU-an-Mwz" secondAttribute="top" id="qm7-1I-st6"/>
-                            <constraint firstItem="gAl-5Q-tVZ" firstAttribute="leading" secondItem="lJU-an-Mwz" secondAttribute="leading" id="tOf-zl-f2y"/>
+                            <constraint firstItem="jH3-Os-pbU" firstAttribute="top" secondItem="lJU-an-Mwz" secondAttribute="top" id="4HO-wb-oQh"/>
+                            <constraint firstItem="jH3-Os-pbU" firstAttribute="leading" secondItem="lJU-an-Mwz" secondAttribute="leading" id="9Ph-1d-ROw"/>
+                            <constraint firstItem="gAl-5Q-tVZ" firstAttribute="top" secondItem="869-3u-oh5" secondAttribute="top" id="D5e-cE-BFh"/>
+                            <constraint firstItem="OnK-9y-KuK" firstAttribute="leading" secondItem="lJU-an-Mwz" secondAttribute="leadingMargin" id="K8e-Xr-du0"/>
+                            <constraint firstItem="5Eg-nW-1Kc" firstAttribute="trailing" secondItem="OnK-9y-KuK" secondAttribute="trailing" constant="297" id="Lkl-ns-c0z"/>
+                            <constraint firstItem="gAl-5Q-tVZ" firstAttribute="trailing" secondItem="869-3u-oh5" secondAttribute="trailing" id="Mar-lK-QlL"/>
+                            <constraint firstAttribute="bottom" secondItem="jH3-Os-pbU" secondAttribute="bottom" id="R6b-yf-8Kk"/>
+                            <constraint firstItem="gAl-5Q-tVZ" firstAttribute="top" secondItem="5Eg-nW-1Kc" secondAttribute="top" constant="64" id="TDB-4D-3ot"/>
+                            <constraint firstAttribute="trailing" secondItem="jH3-Os-pbU" secondAttribute="trailing" id="bFw-JN-zKT"/>
+                            <constraint firstItem="OnK-9y-KuK" firstAttribute="top" secondItem="5Eg-nW-1Kc" secondAttribute="top" id="eZk-k2-b9Q"/>
+                            <constraint firstItem="869-3u-oh5" firstAttribute="top" secondItem="OnK-9y-KuK" secondAttribute="bottom" constant="21" id="gRx-vh-3iH"/>
+                            <constraint firstItem="gAl-5Q-tVZ" firstAttribute="leading" secondItem="5Eg-nW-1Kc" secondAttribute="leading" constant="33" id="h2S-yp-zet"/>
+                            <constraint firstItem="5Eg-nW-1Kc" firstAttribute="bottom" secondItem="gAl-5Q-tVZ" secondAttribute="bottom" constant="134" id="hvA-gT-rIJ"/>
+                            <constraint firstItem="jH3-Os-pbU" firstAttribute="centerX" secondItem="869-3u-oh5" secondAttribute="centerX" id="imo-KO-0Yy"/>
+                            <constraint firstItem="gAl-5Q-tVZ" firstAttribute="bottom" secondItem="869-3u-oh5" secondAttribute="bottom" id="kXr-FB-wYd"/>
+                            <constraint firstItem="869-3u-oh5" firstAttribute="leading" secondItem="gAl-5Q-tVZ" secondAttribute="leading" id="zvp-ls-BNY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Eg-nW-1Kc"/>
                     </view>
+                    <connections>
+                        <outlet property="detailBackGround" destination="gAl-5Q-tVZ" id="oLE-eV-I9M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FW5-1I-HaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,6 +193,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Avengers" width="213" height="378"/>
         <image name="BackGround" width="245" height="436"/>
         <image name="SpiderMan" width="135" height="150"/>
     </resources>

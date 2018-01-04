@@ -24,6 +24,8 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let HawkEye = Hero(name: "Hawk Eye", bio: "Hawk-Eye(Ronin) is a world-class archer and marksman. His above average reflexes and hand-eye-coordination make him the most proficient archer ever known. He is also trained to throw knifes, darts, balls, bolas and boomerangs. He is natural athlete. He is also formidable unarmed combatant, thanks largely for longtime combat training with Captain America. He also has extensive training as an acrobat and aerialist. He is highly capable and charismatic team leader and a shrewd combat strategist, albeit sometimes reckless. Barton is also talented weapon designer, particularly well-versed in variations on basic traditional weaponry such as arrows, blades and hand-thrown projectiles. He has designed and crafted crescent darts, boomerangs, throwing irons, bolas, axes, custom arrows and bows. he is experienced motorcycle rider, Barton was one of the of the most proficient and daring pilots of the Avengers' supersonic Quinjets and other aircraft. He was once 80% deaf due to an injury, but his hearing was restored during his rebirth on Franklin Richards' Counter-Earth.", pic: #imageLiteral(resourceName: "HawkEye"))
     
     let BlackPanther = Hero(name: "Black Panther", bio: "Black Panther (T'Challa) is a brilliant tactician, strategist, scientist, tracker and a master of all forms of unarmed combat whose unique hybrid fighting style incorporates acrobatics and aspects of animal mimicry. T'Challa being a royal descendent of a warrior race is also a master of armed combat, able to use a variety of weapons but prefers unarmed combat. He is a master planner who always thinks several steps ahead and will go to extreme measures to achieve his goals and protect the kingdom of Wakanda.", pic: #imageLiteral(resourceName: "BlackPanther"))
+    
+    let BlackWidow = Hero(name: "Black Widow", bio: "Natasha Romanova, known by many aliases, is an expert spy, athlete, and assassin. Trained at a young age by the KGB's infamous Red Room Academy, the Black Widow was formerly an enemy to the Avengers. She later became their ally after breaking out of the U.S.S.R.'s grasp, and also serves as a top S.H.I.E.L.D. agent.", pic: #imageLiteral(resourceName: "BlackWidow"))
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -44,9 +46,13 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailController = storyboard?.instantiateViewController(withIdentifier: "HeroController") as! PhotosDetailController
-        detailController.photo = UIImage(named: array[indexPath.row] + ".jpg")
-        navigationController?.show(detailController, sender: collectionView)
+        let detailController = storyboard?.instantiateViewController(withIdentifier: "HeroController") as! HeroController
+        
+        detailController.detailImage = Heroes[indexPath.row].pic
+        
+        showDetailViewController(detailController, sender: collectionView)
+        
+        //navigationController?.show(detailController, sender: CardViewController.self)
     }
     
     func viewWillAppear() {
@@ -54,13 +60,14 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     override func viewDidLoad() {
-       
+        Heroes.removeAll()
         Heroes.append(Spiderman)
         Heroes.append(Ironman)
         Heroes.append(CaptAmerica)
         Heroes.append(Hulk)
         Heroes.append(HawkEye)
         Heroes.append(BlackPanther)
+        Heroes.append(BlackWidow)
        
        
     }
