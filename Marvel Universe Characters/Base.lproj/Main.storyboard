@@ -19,7 +19,6 @@
         <!--MenuView-->
         <scene sceneID="7rP-9k-OYd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b4b-7t-4wQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="MenuView" id="1nR-Qm-Z2z" customClass="MenuView" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nCy-8U-dQz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -39,15 +38,30 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="129.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="AvengersCellBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="H7q-2K-I4Z">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="AvengersCellBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="H7q-2K-I4Z">
                                                     <rect key="frame" x="0.0" y="1" width="375" height="128"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
-                                                <visualEffectView opaque="NO" alpha="0.65000000000000002" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="av3-ah-ihj">
+                                                <visualEffectView opaque="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="av3-ah-ihj">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Guj-iM-8JZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miI-76-nlJ">
+                                                                <rect key="frame" x="8" y="8" width="359" height="112"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="miI-76-nlJ" firstAttribute="bottom" secondItem="Guj-iM-8JZ" secondAttribute="bottomMargin" id="WpY-I4-N6O"/>
+                                                            <constraint firstItem="miI-76-nlJ" firstAttribute="top" secondItem="Guj-iM-8JZ" secondAttribute="topMargin" id="azb-Ko-Ehl"/>
+                                                            <constraint firstItem="miI-76-nlJ" firstAttribute="leading" secondItem="Guj-iM-8JZ" secondAttribute="leadingMargin" id="f5d-0D-DQ6"/>
+                                                            <constraint firstItem="miI-76-nlJ" firstAttribute="trailing" secondItem="Guj-iM-8JZ" secondAttribute="trailingMargin" id="t2e-RG-YRh"/>
+                                                        </constraints>
                                                     </view>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <blurEffect style="light"/>
@@ -64,35 +78,53 @@
                                                 <constraint firstItem="H7q-2K-I4Z" firstAttribute="leading" secondItem="q3K-CE-g62" secondAttribute="leading" id="zED-90-kym"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellImage" destination="H7q-2K-I4Z" id="av9-Oe-5cf"/>
+                                            <outlet property="cellLabel" destination="miI-76-nlJ" id="gW5-6V-bKW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1nR-Qm-Z2z" id="dlm-3B-ETy"/>
+                                    <outlet property="delegate" destination="1nR-Qm-Z2z" id="7kt-1j-vfc"/>
+                                </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shield" translatesAutoresizingMaskIntoConstraints="NO" id="JvO-dK-hbd">
+                                <rect key="frame" x="137" y="44" width="100" height="69"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bwt-Ir-Hjv" firstAttribute="top" secondItem="nCy-8U-dQz" secondAttribute="top" id="20L-MG-EOw"/>
                             <constraint firstItem="I7j-cU-Q4O" firstAttribute="top" secondItem="YaQ-NP-3a2" secondAttribute="top" constant="55" id="55k-wl-OeY"/>
+                            <constraint firstItem="YaQ-NP-3a2" firstAttribute="bottom" secondItem="JvO-dK-hbd" secondAttribute="bottom" constant="665" id="9Ea-ss-xnJ"/>
+                            <constraint firstItem="JvO-dK-hbd" firstAttribute="centerX" secondItem="I7j-cU-Q4O" secondAttribute="centerX" id="A4j-17-Hpu"/>
+                            <constraint firstItem="JvO-dK-hbd" firstAttribute="top" secondItem="YaQ-NP-3a2" secondAttribute="top" id="Ava-x8-jBI"/>
                             <constraint firstAttribute="trailing" secondItem="bwt-Ir-Hjv" secondAttribute="trailing" id="B8h-Ok-n2e"/>
                             <constraint firstItem="I7j-cU-Q4O" firstAttribute="bottom" secondItem="bwt-Ir-Hjv" secondAttribute="bottom" id="K2i-6Z-n0A"/>
                             <constraint firstItem="bwt-Ir-Hjv" firstAttribute="leading" secondItem="nCy-8U-dQz" secondAttribute="leading" id="dtx-XH-5yC"/>
                             <constraint firstAttribute="bottom" secondItem="bwt-Ir-Hjv" secondAttribute="bottom" id="fHL-Cq-ghE"/>
                             <constraint firstItem="I7j-cU-Q4O" firstAttribute="trailing" secondItem="bwt-Ir-Hjv" secondAttribute="trailing" id="nYh-AJ-Oun"/>
+                            <constraint firstItem="JvO-dK-hbd" firstAttribute="leading" secondItem="YaQ-NP-3a2" secondAttribute="leading" constant="137" id="tIv-yb-Dcp"/>
                             <constraint firstItem="I7j-cU-Q4O" firstAttribute="leading" secondItem="bwt-Ir-Hjv" secondAttribute="leading" id="yVh-ry-0h2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YaQ-NP-3a2"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ASp-d6-VA9"/>
                     <connections>
                         <outlet property="HeroTeamView" destination="I7j-cU-Q4O" id="cGw-Mw-1A1"/>
+                        <outlet property="shield" destination="JvO-dK-hbd" id="Dnr-5z-kNL"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4b-7t-4wQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-823.20000000000005" y="60.591133004926114"/>
         </scene>
         <!--Card View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController restorationIdentifier="Avengers" storyboardIdentifier="Avengers" id="BYZ-38-t0r" customClass="CardViewController" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Avengers" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CardViewController" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +215,18 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="r1w-Wv-MBQ"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6j-qh-5G6">
+                                <rect key="frame" x="16" y="44" width="62" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1nR-Qm-Z2z" kind="show" id="QAJ-r3-jWF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -193,6 +237,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="VEc-hG-dhy"/>
                     <connections>
                         <outlet property="collectionView" destination="Wl9-Lq-Uyu" id="sPK-Q0-092"/>
                     </connections>
@@ -270,6 +315,7 @@
         <image name="AvengersCellBackGround" width="245" height="245"/>
         <image name="BackGround" width="245" height="436"/>
         <image name="Menu BackGround" width="248" height="464"/>
+        <image name="Shield" width="300" height="300"/>
         <image name="SpiderMan" width="533" height="421"/>
     </resources>
 </document>

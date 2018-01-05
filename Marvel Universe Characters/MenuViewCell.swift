@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 class MenuViewCell: UITableViewCell {
-    
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellImage: UIImageView!
     
     
 }
