@@ -17,8 +17,12 @@
 		89586A371FFCC19A00313FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89586A351FFCC19A00313FEA /* LaunchScreen.storyboard */; };
 		89586A3F1FFCCEA200313FEA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89586A3E1FFCCEA200313FEA /* Model.swift */; };
 		89586A411FFCD05A00313FEA /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89586A401FFCD05A00313FEA /* CardViewCell.swift */; };
-		8965B2F31FFEDFB100D61AEF /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B2F21FFEDFB100D61AEF /* MenuView.swift */; };
-		8965B2F51FFEEAD200D61AEF /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B2F41FFEEAD200D61AEF /* MenuViewCell.swift */; };
+		898BD4001FFF6CB5003B77B5 /* Fantastic4CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD3FF1FFF6CB5003B77B5 /* Fantastic4CardViewController.swift */; };
+		898BD4021FFF75B2003B77B5 /* Fantastic4CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD4011FFF75B2003B77B5 /* Fantastic4CardViewCell.swift */; };
+		898BD4041FFF7D43003B77B5 /* FantasticFourHeroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD4031FFF7D43003B77B5 /* FantasticFourHeroController.swift */; };
+		898BD4071FFF9EEF003B77B5 /* XMenCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD4061FFF9EEF003B77B5 /* XMenCardViewController.swift */; };
+		898BD4091FFF9FFF003B77B5 /* XMenHeroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD4081FFF9FFF003B77B5 /* XMenHeroController.swift */; };
+		898BD40B1FFFA095003B77B5 /* XMenCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD40A1FFFA095003B77B5 /* XMenCardViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +38,12 @@
 		89586A381FFCC19A00313FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89586A3E1FFCCEA200313FEA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		89586A401FFCD05A00313FEA /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
-		8965B2F21FFEDFB100D61AEF /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		8965B2F41FFEEAD200D61AEF /* MenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
+		898BD3FF1FFF6CB5003B77B5 /* Fantastic4CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fantastic4CardViewController.swift; sourceTree = "<group>"; };
+		898BD4011FFF75B2003B77B5 /* Fantastic4CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fantastic4CardViewCell.swift; sourceTree = "<group>"; };
+		898BD4031FFF7D43003B77B5 /* FantasticFourHeroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasticFourHeroController.swift; sourceTree = "<group>"; };
+		898BD4061FFF9EEF003B77B5 /* XMenCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMenCardViewController.swift; sourceTree = "<group>"; };
+		898BD4081FFF9FFF003B77B5 /* XMenHeroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMenHeroController.swift; sourceTree = "<group>"; };
+		898BD40A1FFFA095003B77B5 /* XMenCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMenCardViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,20 +77,64 @@
 			isa = PBXGroup;
 			children = (
 				89586A2C1FFCC19A00313FEA /* AppDelegate.swift */,
-				89586A3E1FFCCEA200313FEA /* Model.swift */,
-				8921E1701FFE186900752987 /* Model.xcdatamodeld */,
-				8921E16E1FFE051B00752987 /* API.swift */,
-				8965B2F21FFEDFB100D61AEF /* MenuView.swift */,
-				8965B2F41FFEEAD200D61AEF /* MenuViewCell.swift */,
-				89586A2E1FFCC19A00313FEA /* CardViewController.swift */,
-				89586A401FFCD05A00313FEA /* CardViewCell.swift */,
-				8921E1731FFEB39E00752987 /* HeroController.swift */,
+				898BD3FD1FFF6A5E003B77B5 /* Model */,
+				898BD3FE1FFF6A73003B77B5 /* Networking */,
+				898BD3FB1FFF5A19003B77B5 /* Fantastic Four Collection */,
+				898BD3FA1FFF55FF003B77B5 /* Avengers Collection */,
+				898BD4051FFF9C4C003B77B5 /* X-Men Collection */,
 				89586A301FFCC19A00313FEA /* Main.storyboard */,
 				89586A331FFCC19A00313FEA /* Assets.xcassets */,
 				89586A351FFCC19A00313FEA /* LaunchScreen.storyboard */,
 				89586A381FFCC19A00313FEA /* Info.plist */,
 			);
 			path = "Marvel Universe Characters";
+			sourceTree = "<group>";
+		};
+		898BD3FA1FFF55FF003B77B5 /* Avengers Collection */ = {
+			isa = PBXGroup;
+			children = (
+				89586A2E1FFCC19A00313FEA /* CardViewController.swift */,
+				89586A401FFCD05A00313FEA /* CardViewCell.swift */,
+				8921E1731FFEB39E00752987 /* HeroController.swift */,
+			);
+			path = "Avengers Collection";
+			sourceTree = "<group>";
+		};
+		898BD3FB1FFF5A19003B77B5 /* Fantastic Four Collection */ = {
+			isa = PBXGroup;
+			children = (
+				898BD3FF1FFF6CB5003B77B5 /* Fantastic4CardViewController.swift */,
+				898BD4011FFF75B2003B77B5 /* Fantastic4CardViewCell.swift */,
+				898BD4031FFF7D43003B77B5 /* FantasticFourHeroController.swift */,
+			);
+			path = "Fantastic Four Collection";
+			sourceTree = "<group>";
+		};
+		898BD3FD1FFF6A5E003B77B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89586A3E1FFCCEA200313FEA /* Model.swift */,
+				8921E1701FFE186900752987 /* Model.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		898BD3FE1FFF6A73003B77B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8921E16E1FFE051B00752987 /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		898BD4051FFF9C4C003B77B5 /* X-Men Collection */ = {
+			isa = PBXGroup;
+			children = (
+				898BD4061FFF9EEF003B77B5 /* XMenCardViewController.swift */,
+				898BD40A1FFFA095003B77B5 /* XMenCardViewCell.swift */,
+				898BD4081FFF9FFF003B77B5 /* XMenHeroController.swift */,
+			);
+			path = "X-Men Collection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,12 +210,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				89586A3F1FFCCEA200313FEA /* Model.swift in Sources */,
-				8965B2F31FFEDFB100D61AEF /* MenuView.swift in Sources */,
 				89586A2F1FFCC19A00313FEA /* CardViewController.swift in Sources */,
 				8921E1741FFEB39E00752987 /* HeroController.swift in Sources */,
 				89586A411FFCD05A00313FEA /* CardViewCell.swift in Sources */,
-				8965B2F51FFEEAD200D61AEF /* MenuViewCell.swift in Sources */,
+				898BD4021FFF75B2003B77B5 /* Fantastic4CardViewCell.swift in Sources */,
+				898BD4071FFF9EEF003B77B5 /* XMenCardViewController.swift in Sources */,
+				898BD4001FFF6CB5003B77B5 /* Fantastic4CardViewController.swift in Sources */,
 				89586A2D1FFCC19A00313FEA /* AppDelegate.swift in Sources */,
+				898BD4041FFF7D43003B77B5 /* FantasticFourHeroController.swift in Sources */,
+				898BD4091FFF9FFF003B77B5 /* XMenHeroController.swift in Sources */,
+				898BD40B1FFFA095003B77B5 /* XMenCardViewCell.swift in Sources */,
 				8921E16F1FFE051B00752987 /* API.swift in Sources */,
 				8921E1721FFE186900752987 /* Model.xcdatamodeld in Sources */,
 			);
