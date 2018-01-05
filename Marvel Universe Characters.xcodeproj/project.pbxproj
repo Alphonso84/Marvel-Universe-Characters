@@ -82,6 +82,7 @@
 				898BD3FB1FFF5A19003B77B5 /* Fantastic Four Collection */,
 				898BD3FA1FFF55FF003B77B5 /* Avengers Collection */,
 				898BD4051FFF9C4C003B77B5 /* X-Men Collection */,
+				898BD40C200019F9003B77B5 /* Guardians Collection */,
 				89586A301FFCC19A00313FEA /* Main.storyboard */,
 				89586A331FFCC19A00313FEA /* Assets.xcassets */,
 				89586A351FFCC19A00313FEA /* LaunchScreen.storyboard */,
@@ -135,6 +136,13 @@
 				898BD4081FFF9FFF003B77B5 /* XMenHeroController.swift */,
 			);
 			path = "X-Men Collection";
+			sourceTree = "<group>";
+		};
+		898BD40C200019F9003B77B5 /* Guardians Collection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Guardians Collection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

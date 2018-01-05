@@ -12,6 +12,8 @@ import CoreData
 var Heroes = [Hero]()
 
 class CardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+   
+    let Thor = Hero.init(name: "Thor", bio: "As the son of Odin and Gaea, Thor's strength, endurance and resistance to injury are greater than the vast majority of his superhuman race. He is extremely long-lived (though not completely immune to aging), immune to conventional disease and highly resistant to injury. His flesh and bones are several times denser than a human's.As Lord of Asgard, Thor possessed the Odinforce, which enabled him to tap into the near-infinite resources of cosmic and mystical energies, enhancing all of his abilities. With the vast magical power of the Odinforce, Thor was even able to dent Captain America’s virtually indestructible shield with Mjolnir.", pic: #imageLiteral(resourceName: "Thor"))
     
    let Spiderman = Hero.init(name: "Spider Man", bio: "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.", pic: #imageLiteral(resourceName: "SpiderMan"))
     
@@ -68,6 +70,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         Heroes.append(Ironman)
         Heroes.append(CaptAmerica)
         Heroes.append(Falcon)
+        Heroes.append(Thor)
         Heroes.append(Hulk)
         Heroes.append(HawkEye)
         Heroes.append(BlackPanther)
