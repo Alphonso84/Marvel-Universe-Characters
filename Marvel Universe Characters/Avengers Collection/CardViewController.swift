@@ -32,6 +32,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let BlackWidow = Hero(name: "Black Widow", bio: "Natasha Romanova, known by many aliases, is an expert spy, athlete, and assassin. Trained at a young age by the KGB's infamous Red Room Academy, the Black Widow was formerly an enemy to the Avengers. She later became their ally after breaking out of the U.S.S.R.'s grasp, and also serves as a top S.H.I.E.L.D. agent.", pic: #imageLiteral(resourceName: "BlackWidow"))
     
 
+    @IBOutlet weak var backGround: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     
@@ -65,6 +66,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     override func viewDidLoad() {
+       
         Heroes.removeAll()
         Heroes.append(Spiderman)
         Heroes.append(Ironman)

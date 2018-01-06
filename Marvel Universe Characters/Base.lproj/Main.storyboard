@@ -33,7 +33,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" id="ycx-b3-wm2">
+                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" id="ycx-b3-wm2">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -123,6 +123,7 @@
                     <tabBarItem key="tabBarItem" title="" image="AvengersIcon" selectedImage="AvengersIcon" id="twC-Li-nx3"/>
                     <navigationItem key="navigationItem" id="VEc-hG-dhy"/>
                     <connections>
+                        <outlet property="backGround" destination="ycx-b3-wm2" id="CMh-ac-QeO"/>
                         <outlet property="collectionView" destination="Wl9-Lq-Uyu" id="sPK-Q0-092"/>
                     </connections>
                 </viewController>
@@ -138,7 +139,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Metal Background" translatesAutoresizingMaskIntoConstraints="NO" id="jH3-Os-pbU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="jH3-Os-pbU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="869-3u-oh5">
@@ -186,6 +187,8 @@
                     </view>
                     <connections>
                         <outlet property="detailBackGround" destination="gAl-5Q-tVZ" id="oLE-eV-I9M"/>
+                        <outlet property="mainBackGround" destination="jH3-Os-pbU" id="viz-30-X4a"/>
+                        <outlet property="visualEffectView" destination="869-3u-oh5" id="HbV-ci-T08"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FW5-1I-HaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -209,7 +212,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" id="t6s-wP-VNg">
+                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" id="t6s-wP-VNg">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -314,7 +317,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Metal Background" translatesAutoresizingMaskIntoConstraints="NO" id="HtE-r0-y2c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="HtE-r0-y2c">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <visualEffectView opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="re8-WA-7UH">
@@ -363,6 +366,7 @@
                     </view>
                     <connections>
                         <outlet property="detailBackGround" destination="cfi-mg-J22" id="jCb-tj-eRL"/>
+                        <outlet property="visualEffectView" destination="re8-WA-7UH" id="GBj-bi-RjK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTX-oy-cTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -375,6 +379,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dI7-Cy-d97" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="h5a-M2-X9N">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -405,7 +410,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" id="Ogb-eS-iNQ">
+                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" id="Ogb-eS-iNQ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -510,7 +515,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Metal Background" translatesAutoresizingMaskIntoConstraints="NO" id="jff-pQ-gI7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="jff-pQ-gI7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <visualEffectView opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBz-ON-IP7">
@@ -559,6 +564,7 @@
                     </view>
                     <connections>
                         <outlet property="detailBackGround" destination="nqs-HO-00L" id="3RU-yq-gBj"/>
+                        <outlet property="visualEffectView" destination="kBz-ON-IP7" id="Vtu-My-qJX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOo-VO-a1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -568,9 +574,8 @@
     </scenes>
     <resources>
         <image name="AvengersIcon" width="42" height="42"/>
-        <image name="BackGround" width="245" height="436"/>
         <image name="Fantastic4Icon" width="42" height="42"/>
-        <image name="Metal Background" width="213" height="378"/>
+        <image name="Marvel" width="360" height="640"/>
         <image name="Mr Fantastic" width="252" height="366"/>
         <image name="SpiderMan" width="533" height="421"/>
         <image name="Wolverine" width="489" height="520"/>

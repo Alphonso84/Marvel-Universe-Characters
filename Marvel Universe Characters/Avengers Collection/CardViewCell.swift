@@ -14,9 +14,13 @@ var imageURLString = ""
 @IBOutlet weak var cellTextField: UITextView!
 @IBOutlet weak var cellLabel: UILabel!
 
+    
+    
 func viewDidLoad() {
     viewDidLayoutSubviews()
+   
     }
+    
     
     func viewDidAppear() {
         
