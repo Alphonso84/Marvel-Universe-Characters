@@ -24,28 +24,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="ycx-b3-wm2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wl9-Lq-Uyu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="665"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kYk-a0-KLi">
                                     <size key="itemSize" width="303" height="555"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" id="ycx-b3-wm2">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.10000000000000001" contentMode="center" reuseIdentifier="cell" id="bEb-6q-LlA" customClass="MyCell" customModule="Marvel_Universe_Characters" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="104" width="303" height="555"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="bEb-6q-LlA" customClass="MyCell" customModule="Marvel_Universe_Characters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="303" height="555"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <visualEffectView opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXt-1M-9Qs">
+                                                <visualEffectView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXt-1M-9Qs">
                                                     <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xYn-Fc-dYo">
                                                         <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
@@ -88,7 +87,6 @@
                                                             <constraint firstItem="zHm-t7-rcb" firstAttribute="centerX" secondItem="xYn-Fc-dYo" secondAttribute="centerX" id="ywA-kz-28R"/>
                                                         </constraints>
                                                     </view>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <blurEffect style="regular"/>
                                                 </visualEffectView>
                                             </subviews>
@@ -113,10 +111,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Wl9-Lq-Uyu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4Sv-Qy-mVE"/>
-                            <constraint firstItem="Wl9-Lq-Uyu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="BRK-3A-FXw"/>
-                            <constraint firstItem="Wl9-Lq-Uyu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fjx-x9-zDR"/>
-                            <constraint firstAttribute="trailing" secondItem="Wl9-Lq-Uyu" secondAttribute="trailing" id="spQ-M6-6Vx"/>
+                            <constraint firstItem="ycx-b3-wm2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3ay-nh-obH"/>
+                            <constraint firstAttribute="bottom" secondItem="Wl9-Lq-Uyu" secondAttribute="bottom" constant="20" symbolic="YES" id="ALU-3e-jxQ"/>
+                            <constraint firstItem="ycx-b3-wm2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qux-HO-JC3"/>
+                            <constraint firstAttribute="trailing" secondItem="Wl9-Lq-Uyu" secondAttribute="trailing" id="Z6B-FS-3Xh"/>
+                            <constraint firstItem="ycx-b3-wm2" firstAttribute="leading" secondItem="Wl9-Lq-Uyu" secondAttribute="leading" id="cTv-sb-PrH"/>
+                            <constraint firstItem="Wl9-Lq-Uyu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pEZ-YO-dCS"/>
+                            <constraint firstItem="Wl9-Lq-Uyu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pOJ-9S-1eA"/>
+                            <constraint firstItem="ycx-b3-wm2" firstAttribute="trailing" secondItem="Wl9-Lq-Uyu" secondAttribute="trailing" id="ywL-vW-Q7P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -203,28 +205,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="t6s-wP-VNg">
+                                <rect key="frame" x="0.0" y="-17" width="375" height="763"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-l5-Plg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="665"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tmg-lS-tt9">
                                     <size key="itemSize" width="303" height="555"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" id="t6s-wP-VNg">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.10000000149011612" contentMode="center" restorationIdentifier="cell" reuseIdentifier="cell" id="0bX-iA-vXa" customClass="FantasticCell" customModule="Marvel_Universe_Characters" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="104" width="303" height="555"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="center" restorationIdentifier="cell" reuseIdentifier="cell" id="0bX-iA-vXa" customClass="FantasticCell" customModule="Marvel_Universe_Characters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="303" height="555"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <visualEffectView opaque="NO" alpha="0.64999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJY-Cm-gKH">
+                                                <visualEffectView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJY-Cm-gKH">
                                                     <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ytU-NS-VlD">
                                                         <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
@@ -267,7 +268,6 @@
                                                             <constraint firstItem="1kI-2l-XqJ" firstAttribute="trailing" secondItem="CnW-Rr-68r" secondAttribute="trailing" id="ris-ZF-ZE2"/>
                                                         </constraints>
                                                     </view>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <blurEffect style="regular"/>
                                                 </visualEffectView>
                                             </subviews>
@@ -292,10 +292,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Kav-l5-Plg" secondAttribute="trailing" id="GFq-Rn-6s7"/>
-                            <constraint firstItem="Kav-l5-Plg" firstAttribute="leading" secondItem="lRp-U0-JOz" secondAttribute="leading" id="dRp-JJ-Bd7"/>
-                            <constraint firstItem="Kav-l5-Plg" firstAttribute="bottom" secondItem="Uyj-co-qDe" secondAttribute="bottom" constant="34" id="fsg-SH-lZa"/>
-                            <constraint firstItem="Kav-l5-Plg" firstAttribute="top" secondItem="lRp-U0-JOz" secondAttribute="top" id="g7d-fX-N0Y"/>
+                            <constraint firstItem="t6s-wP-VNg" firstAttribute="centerY" secondItem="lRp-U0-JOz" secondAttribute="centerY" id="18R-bQ-ne2"/>
+                            <constraint firstItem="Kav-l5-Plg" firstAttribute="trailing" secondItem="t6s-wP-VNg" secondAttribute="trailing" id="3uV-mU-MCd"/>
+                            <constraint firstItem="Kav-l5-Plg" firstAttribute="top" secondItem="Uyj-co-qDe" secondAttribute="top" id="9LL-Aw-Vdt"/>
+                            <constraint firstItem="Kav-l5-Plg" firstAttribute="leading" secondItem="lRp-U0-JOz" secondAttribute="leading" id="C6e-sC-2SP"/>
+                            <constraint firstItem="t6s-wP-VNg" firstAttribute="top" secondItem="lRp-U0-JOz" secondAttribute="topMargin" constant="-61" id="HyY-T5-kRZ"/>
+                            <constraint firstItem="Kav-l5-Plg" firstAttribute="leading" secondItem="t6s-wP-VNg" secondAttribute="leading" id="hfJ-ds-jQ4"/>
+                            <constraint firstAttribute="trailing" secondItem="Kav-l5-Plg" secondAttribute="trailing" id="sEx-hg-sqz"/>
+                            <constraint firstAttribute="bottom" secondItem="Kav-l5-Plg" secondAttribute="bottom" constant="20" symbolic="YES" id="w1r-A1-6na"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uyj-co-qDe"/>
                     </view>
@@ -401,28 +405,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="Ogb-eS-iNQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DMO-gg-yuc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="665"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UHg-2r-jw2">
                                     <size key="itemSize" width="303" height="555"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" id="Ogb-eS-iNQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.10000000149011612" contentMode="center" reuseIdentifier="cell" id="j4c-M6-BTI" customClass="XMenCardViewCell" customModule="Marvel_Universe_Characters" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="104" width="303" height="555"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="j4c-M6-BTI" customClass="XMenCardViewCell" customModule="Marvel_Universe_Characters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="303" height="555"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <visualEffectView opaque="NO" alpha="0.64999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4r-hv-GRf">
+                                                <visualEffectView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4r-hv-GRf">
                                                     <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GLc-u7-ghV">
                                                         <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
@@ -465,7 +468,6 @@
                                                             <constraint firstItem="uNt-Zf-QvL" firstAttribute="trailing" secondItem="GHa-uW-g3w" secondAttribute="trailing" id="weq-P2-mjP"/>
                                                         </constraints>
                                                     </view>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <blurEffect style="regular"/>
                                                 </visualEffectView>
                                             </subviews>
@@ -490,10 +492,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="DMO-gg-yuc" secondAttribute="trailing" id="7KL-db-87P"/>
-                            <constraint firstItem="DMO-gg-yuc" firstAttribute="bottom" secondItem="1Tv-AK-AxS" secondAttribute="bottom" constant="34" id="8T1-QY-t0M"/>
-                            <constraint firstItem="DMO-gg-yuc" firstAttribute="top" secondItem="9sg-sS-f75" secondAttribute="top" id="I78-mn-f7q"/>
-                            <constraint firstItem="DMO-gg-yuc" firstAttribute="leading" secondItem="9sg-sS-f75" secondAttribute="leading" id="nRe-Ps-xYe"/>
+                            <constraint firstAttribute="trailing" secondItem="DMO-gg-yuc" secondAttribute="trailing" id="6UB-qQ-xZk"/>
+                            <constraint firstItem="DMO-gg-yuc" firstAttribute="top" secondItem="1Tv-AK-AxS" secondAttribute="top" id="GcE-G5-7gs"/>
+                            <constraint firstAttribute="bottom" secondItem="DMO-gg-yuc" secondAttribute="bottom" constant="20" symbolic="YES" id="KZ7-TW-dbA"/>
+                            <constraint firstItem="DMO-gg-yuc" firstAttribute="leading" secondItem="9sg-sS-f75" secondAttribute="leading" id="OVI-oC-H8U"/>
+                            <constraint firstItem="DMO-gg-yuc" firstAttribute="leading" secondItem="Ogb-eS-iNQ" secondAttribute="leading" id="cgu-Sh-fCu"/>
+                            <constraint firstItem="Ogb-eS-iNQ" firstAttribute="bottom" secondItem="1Tv-AK-AxS" secondAttribute="bottom" id="mbr-Qz-Agx"/>
+                            <constraint firstItem="Ogb-eS-iNQ" firstAttribute="top" secondItem="9sg-sS-f75" secondAttribute="top" id="vEg-U0-wls"/>
+                            <constraint firstItem="DMO-gg-yuc" firstAttribute="trailing" secondItem="Ogb-eS-iNQ" secondAttribute="trailing" id="w4d-OD-aAM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Tv-AK-AxS"/>
                     </view>
@@ -505,7 +511,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6MI-nL-UpE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1708" y="-1358"/>
+            <point key="canvasLocation" x="-1708" y="-1358.1280788177341"/>
         </scene>
         <!--XMenHeroController-->
         <scene sceneID="jW6-Q6-xQH">
