@@ -24,7 +24,6 @@ class HeroController: UIViewController {
         myMotionEffect(view: visualEffectView, min: -15, max: 15)
         myMotionEffect(view: detailBackGround, min: -60, max: 60)
     }
-    
     func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {
         
         let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
@@ -39,4 +38,5 @@ class HeroController: UIViewController {
         motionEffectGroup.motionEffects = [xMotion,yMotion]
         view.addMotionEffect(motionEffectGroup)
     }
+   
 }
