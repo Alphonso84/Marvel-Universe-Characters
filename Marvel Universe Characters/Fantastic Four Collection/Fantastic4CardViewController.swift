@@ -44,9 +44,11 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
         
         detailController.detailImage = Fantastic4Heroes[indexPath.row].pic
     
-        showDetailViewController(detailController, sender: collectionView)
+//        showDetailViewController(detailController, sender: collectionView)
         
-        //navigationController?.show(detailController, sender: CardViewController.self)
+        navigationController?.show(detailController, sender: collectionView)
+        //navigationController?.pushViewController(detailController, animated: true)
+      
     }
     
     func viewWillAppear() {

@@ -65,9 +65,9 @@ class XMenCardViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         detailController.detailImage = XMenHeroes[indexPath.row].pic
         
-        showDetailViewController(detailController, sender: collectionView)
+//        showDetailViewController(detailController, sender: collectionView)
         
-        //navigationController?.show(detailController, sender: CardViewController.self)
+        navigationController?.show(detailController, sender: collectionView)
     }
     
     func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {
