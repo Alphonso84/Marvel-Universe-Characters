@@ -59,8 +59,6 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         detailController.detailImage = Heroes[indexPath.row].pic
         
-//        showDetailViewController(detailController, sender: collectionView)
-        
         navigationController?.show(detailController, sender: CardViewController.self)
     }
     
