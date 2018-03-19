@@ -11,5 +11,8 @@ import UIKit
 
 class Menu: UIViewController {
     
+    @IBAction func userDidTap(_ sender: Any) {
+    self.dismiss(animated: true)
+    }
     
 }

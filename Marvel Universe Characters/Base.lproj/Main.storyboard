@@ -377,12 +377,20 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dI7-Cy-d97" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="q45-mu-l2V"/>
+                    <navigationItem key="navigationItem" id="q45-mu-l2V">
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="8KH-XN-qVs">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Au0-XF-PJ6" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="YWn-Ky-Hfp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="h5a-M2-X9N">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.26208984851837158" green="0.028527423739433289" blue="0.031603030860424042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="0m5-Cf-OSJ"/>
@@ -607,9 +615,13 @@
                     <size key="freeformSize" width="0.0" height="0.0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lGs-pD-3YK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="FeQ-ue-E5v"/>
+                <tapGestureRecognizer id="FeQ-ue-E5v">
+                    <connections>
+                        <action selector="userDidTap:" destination="Au0-XF-PJ6" id="fQZ-vd-gGj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-4095.1999999999998" y="-355.41871921182269"/>
+            <point key="canvasLocation" x="-3034" y="-952"/>
         </scene>
     </scenes>
     <resources>
@@ -617,6 +629,7 @@
         <image name="Fantastic4Icon" width="42" height="42"/>
         <image name="Marvel" width="360" height="640"/>
         <image name="Marvel Logo" width="533" height="378"/>
+        <image name="Menu" width="85" height="85"/>
         <image name="Mr Fantastic" width="252" height="366"/>
         <image name="SpiderMan" width="533" height="421"/>
         <image name="Wolverine" width="489" height="520"/>
