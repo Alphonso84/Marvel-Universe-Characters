@@ -18,6 +18,7 @@
 		89586A371FFCC19A00313FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89586A351FFCC19A00313FEA /* LaunchScreen.storyboard */; };
 		89586A3F1FFCCEA200313FEA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89586A3E1FFCCEA200313FEA /* Model.swift */; };
 		89586A411FFCD05A00313FEA /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89586A401FFCD05A00313FEA /* CardViewCell.swift */; };
+		897B8AE420CD5E670065F35D /* GuardiansCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B8AE320CD5E670065F35D /* GuardiansCardViewController.swift */; };
 		898BD4001FFF6CB5003B77B5 /* Fantastic4CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD3FF1FFF6CB5003B77B5 /* Fantastic4CardViewController.swift */; };
 		898BD4021FFF75B2003B77B5 /* Fantastic4CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD4011FFF75B2003B77B5 /* Fantastic4CardViewCell.swift */; };
 		898BD4041FFF7D43003B77B5 /* FantasticFourHeroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD4031FFF7D43003B77B5 /* FantasticFourHeroController.swift */; };
@@ -40,6 +41,7 @@
 		89586A381FFCC19A00313FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89586A3E1FFCCEA200313FEA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		89586A401FFCD05A00313FEA /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		897B8AE320CD5E670065F35D /* GuardiansCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardiansCardViewController.swift; sourceTree = "<group>"; };
 		898BD3FF1FFF6CB5003B77B5 /* Fantastic4CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fantastic4CardViewController.swift; sourceTree = "<group>"; };
 		898BD4011FFF75B2003B77B5 /* Fantastic4CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fantastic4CardViewCell.swift; sourceTree = "<group>"; };
 		898BD4031FFF7D43003B77B5 /* FantasticFourHeroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasticFourHeroController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		898BD40C200019F9003B77B5 /* Guardians Collection */ = {
 			isa = PBXGroup;
 			children = (
+				897B8AE320CD5E670065F35D /* GuardiansCardViewController.swift */,
 			);
 			path = "Guardians Collection";
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				89586A2D1FFCC19A00313FEA /* AppDelegate.swift in Sources */,
 				898BD4041FFF7D43003B77B5 /* FantasticFourHeroController.swift in Sources */,
 				898BD4091FFF9FFF003B77B5 /* XMenHeroController.swift in Sources */,
+				897B8AE420CD5E670065F35D /* GuardiansCardViewController.swift in Sources */,
 				898BD40B1FFFA095003B77B5 /* XMenCardViewCell.swift in Sources */,
 				8921E16F1FFE051B00752987 /* API.swift in Sources */,
 				8921E1721FFE186900752987 /* Model.xcdatamodeld in Sources */,
