@@ -43,10 +43,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="ycx-b3-wm2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wl9-Lq-Uyu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="655"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kYk-a0-KLi">
                                     <size key="itemSize" width="303" height="555"/>
@@ -56,7 +56,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="bEb-6q-LlA" customClass="MyCell" customModule="Marvel_Universe_Characters" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="303" height="555"/>
+                                        <rect key="frame" x="0.0" y="33" width="303" height="555"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
@@ -206,14 +206,14 @@
             <objects>
                 <viewController storyboardIdentifier="FantasticFour" title="FantasticFour" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GIx-8h-bRF" customClass="FantasticFourCardViewController" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lRp-U0-JOz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="t6s-wP-VNg">
-                                <rect key="frame" x="0.0" y="-88" width="375" height="729"/>
+                                <rect key="frame" x="0.0" y="-88" width="375" height="763"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-l5-Plg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="655"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tmg-lS-tt9">
                                     <size key="itemSize" width="303" height="555"/>
@@ -223,7 +223,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="center" restorationIdentifier="cell" reuseIdentifier="cell" id="0bX-iA-vXa" customClass="FantasticCell" customModule="Marvel_Universe_Characters" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="33" width="303" height="555"/>
+                                        <rect key="frame" x="0.0" y="50" width="303" height="555"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
@@ -329,15 +329,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <visualEffectView opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="re8-WA-7UH">
-                                <rect key="frame" x="33" y="108" width="309" height="536"/>
+                                <rect key="frame" x="33" y="108" width="309" height="570"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Cdc-MS-DEM">
-                                    <rect key="frame" x="0.0" y="0.0" width="309" height="536"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="309" height="570"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfi-mg-J22">
-                                <rect key="frame" x="33" y="108" width="309" height="536"/>
+                                <rect key="frame" x="33" y="108" width="309" height="570"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -623,14 +623,14 @@
             <objects>
                 <viewController storyboardIdentifier="GUARDIANS" title="GUARDIANS" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hg4-xg-teg" customClass="GuardiansCardViewController" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V61-Ba-SwS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="eyv-Jd-o3J">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PmZ-75-VMP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="655"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="36W-Dj-NSk">
                                     <size key="itemSize" width="303" height="555"/>
@@ -639,8 +639,8 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="DWs-Ih-ap1" customClass="XMenCardViewCell" customModule="Marvel_Universe_Characters" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="33" width="303" height="555"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" reuseIdentifier="cell" id="DWs-Ih-ap1" customClass="GuardiansCardViewCell" customModule="Marvel_Universe_Characters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="303" height="555"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="303" height="555"/>
@@ -662,10 +662,10 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wolverine" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhq-GP-78L">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groot" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhq-GP-78L">
                                                                 <rect key="frame" x="31" y="8" width="240" height="307"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wolverine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om2-Eg-7qV">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om2-Eg-7qV">
                                                                 <rect key="frame" x="61" y="336" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="S9b-Fn-WVy"/>
@@ -734,6 +734,55 @@
             </objects>
             <point key="canvasLocation" x="-20" y="-1235"/>
         </scene>
+        <!--GuardiansHeroController-->
+        <scene sceneID="HTm-DX-BWg">
+            <objects>
+                <viewController storyboardIdentifier="GuardiansHeroController" title="GuardiansHeroController" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Em0-LA-Twi" customClass="GuardiansHeroController" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XG4-vp-V8C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="t1r-xB-uWF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5VE-87-TBH">
+                                <rect key="frame" x="33" y="108" width="309" height="570"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2O8-4V-UTI">
+                                    <rect key="frame" x="0.0" y="0.0" width="309" height="570"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oGB-px-DbX">
+                                <rect key="frame" x="33" y="108" width="309" height="570"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oGB-px-DbX" firstAttribute="trailing" secondItem="5VE-87-TBH" secondAttribute="trailing" id="6y3-gF-VlP"/>
+                            <constraint firstItem="t1r-xB-uWF" firstAttribute="leading" secondItem="XG4-vp-V8C" secondAttribute="leading" id="D3A-G5-M1t"/>
+                            <constraint firstItem="oGB-px-DbX" firstAttribute="top" secondItem="5VE-87-TBH" secondAttribute="top" id="LRu-uf-6fj"/>
+                            <constraint firstItem="oGB-px-DbX" firstAttribute="top" secondItem="WKH-2r-mst" secondAttribute="top" constant="64" id="Lvq-hi-dcK"/>
+                            <constraint firstItem="t1r-xB-uWF" firstAttribute="top" secondItem="XG4-vp-V8C" secondAttribute="top" id="Zc5-jC-tpZ"/>
+                            <constraint firstAttribute="bottom" secondItem="t1r-xB-uWF" secondAttribute="bottom" id="fg2-cP-Xwx"/>
+                            <constraint firstItem="oGB-px-DbX" firstAttribute="leading" secondItem="WKH-2r-mst" secondAttribute="leading" constant="33" id="hC0-YH-3mu"/>
+                            <constraint firstItem="t1r-xB-uWF" firstAttribute="centerX" secondItem="5VE-87-TBH" secondAttribute="centerX" id="hiH-35-JGl"/>
+                            <constraint firstItem="WKH-2r-mst" firstAttribute="bottom" secondItem="oGB-px-DbX" secondAttribute="bottom" constant="134" id="iZk-qn-efw"/>
+                            <constraint firstItem="oGB-px-DbX" firstAttribute="bottom" secondItem="5VE-87-TBH" secondAttribute="bottom" id="jVA-kZ-YoM"/>
+                            <constraint firstAttribute="trailing" secondItem="t1r-xB-uWF" secondAttribute="trailing" id="oah-Jr-jlI"/>
+                            <constraint firstItem="5VE-87-TBH" firstAttribute="leading" secondItem="oGB-px-DbX" secondAttribute="leading" id="xPe-34-GxZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WKH-2r-mst"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailBackGround" destination="oGB-px-DbX" id="Ojo-FS-wpP"/>
+                        <outlet property="visualEffectView" destination="5VE-87-TBH" id="dcC-uH-H9f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooK-4i-bqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="-1235"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AvengersIcon" width="42" height="42"/>
@@ -745,6 +794,7 @@
         <image name="SpiderMan" width="533" height="421"/>
         <image name="Wolverine" width="489" height="520"/>
         <image name="XmenIcon" width="42" height="42"/>
+        <image name="groot" width="240" height="369"/>
         <image name="guardianIcon" width="66" height="66"/>
     </resources>
 </document>

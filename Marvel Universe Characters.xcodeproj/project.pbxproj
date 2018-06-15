@@ -25,6 +25,8 @@
 		898BD4071FFF9EEF003B77B5 /* XMenCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD4061FFF9EEF003B77B5 /* XMenCardViewController.swift */; };
 		898BD4091FFF9FFF003B77B5 /* XMenHeroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD4081FFF9FFF003B77B5 /* XMenHeroController.swift */; };
 		898BD40B1FFFA095003B77B5 /* XMenCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD40A1FFFA095003B77B5 /* XMenCardViewCell.swift */; };
+		89B059D220D3B72A00DFA515 /* GaurdiansCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B059D120D3B72A00DFA515 /* GaurdiansCardViewCell.swift */; };
+		89B059D420D3B73D00DFA515 /* GaurdiansController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B059D320D3B73D00DFA515 /* GaurdiansController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		898BD4061FFF9EEF003B77B5 /* XMenCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMenCardViewController.swift; sourceTree = "<group>"; };
 		898BD4081FFF9FFF003B77B5 /* XMenHeroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMenHeroController.swift; sourceTree = "<group>"; };
 		898BD40A1FFFA095003B77B5 /* XMenCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMenCardViewCell.swift; sourceTree = "<group>"; };
+		89B059D120D3B72A00DFA515 /* GaurdiansCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaurdiansCardViewCell.swift; sourceTree = "<group>"; };
+		89B059D320D3B73D00DFA515 /* GaurdiansController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaurdiansController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				897B8AE320CD5E670065F35D /* GuardiansCardViewController.swift */,
+				89B059D120D3B72A00DFA515 /* GaurdiansCardViewCell.swift */,
+				89B059D320D3B73D00DFA515 /* GaurdiansController.swift */,
 			);
 			path = "Guardians Collection";
 			sourceTree = "<group>";
@@ -232,11 +238,13 @@
 				898BD4071FFF9EEF003B77B5 /* XMenCardViewController.swift in Sources */,
 				898BD4001FFF6CB5003B77B5 /* Fantastic4CardViewController.swift in Sources */,
 				89586A2D1FFCC19A00313FEA /* AppDelegate.swift in Sources */,
+				89B059D220D3B72A00DFA515 /* GaurdiansCardViewCell.swift in Sources */,
 				898BD4041FFF7D43003B77B5 /* FantasticFourHeroController.swift in Sources */,
 				898BD4091FFF9FFF003B77B5 /* XMenHeroController.swift in Sources */,
 				897B8AE420CD5E670065F35D /* GuardiansCardViewController.swift in Sources */,
 				898BD40B1FFFA095003B77B5 /* XMenCardViewCell.swift in Sources */,
 				8921E16F1FFE051B00752987 /* API.swift in Sources */,
+				89B059D420D3B73D00DFA515 /* GaurdiansController.swift in Sources */,
 				8921E1721FFE186900752987 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
