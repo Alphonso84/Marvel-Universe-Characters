@@ -402,7 +402,7 @@
             <objects>
                 <viewController storyboardIdentifier="XMEN" title="XMen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="taY-dp-AOM" customClass="XMenCardViewController" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9sg-sS-f75">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="Ogb-eS-iNQ">
@@ -727,7 +727,7 @@
                     <tabBarItem key="tabBarItem" title="" image="guardianIcon" selectedImage="guardianIcon" id="3U3-Ks-xQ2"/>
                     <navigationItem key="navigationItem" id="O7F-Wa-RiJ"/>
                     <connections>
-                        <outlet property="collectionView" destination="PmZ-75-VMP" id="T0D-6q-zWe"/>
+                        <outlet property="collectionView" destination="PmZ-75-VMP" id="2fc-8H-I9I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OR6-mH-0R1" sceneMemberID="firstResponder"/>
