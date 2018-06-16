@@ -21,6 +21,8 @@ class GuardiansCardViewController: UIViewController, UICollectionViewDelegate, U
     
     let StarLord = Hero(name: "Star Lord", bio: "Refusing to miss his opportunity, Peter Jason Quill stole a scoutship from Cape Canaveral, returned to Eve, and shot his way to the appointed spot, where his old rival Harrelson, NASA's choice to be Star-Lord, was awaiting selection, where Quill was transported away in his stead, and transformed into Star-Lord.", pic: UIImage(named: "Star Lord")!)
     
+    let Gamora = Hero(name: "Gamora", bio: "Gamora received treatments from Thanos that enhanced her speed, strength, agility, and durability to rival Adam Warlock's (to better slay the Magus, his evil, future self). Thanos also helped her become a formidable hand-to-hand combatant, trained in the martial-arts techniques from various planets, in the uses of the known weaponry of the Milky Way Galaxy, and stealth techniques. She is also a highly-skilled gymnast and assassin, and formerly possessed a telepathic link to Thanos. She uses a wide variety of weaponry, most notably a dagger whose unknown properties made it capable of slaying even beings of such immense power as Thanos and the Magus.", pic: UIImage(named: "Gamora")!)
+    
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -61,6 +63,7 @@ class GuardiansCardViewController: UIViewController, UICollectionViewDelegate, U
         guardianHeroes.append(Groot)
         guardianHeroes.append(Rocket)
         guardianHeroes.append(StarLord)
+        guardianHeroes.append(Gamora)
     }
     
     
