@@ -18,6 +18,9 @@ class FantasticFourHeroController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        visualEffectView.layer.cornerRadius = 75
+       // underView.layer.cornerRadius = 75
+        detailBackGround.layer.cornerRadius = 75
         detailBackGround.image = detailImage
         myMotionEffect(view: visualEffectView, min: -15, max: 15)
         myMotionEffect(view: detailBackGround, min: -60, max: 60)

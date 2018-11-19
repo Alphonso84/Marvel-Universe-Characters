@@ -51,6 +51,11 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         cell.cellLabel.text = Heroes[indexPath.row].name
         cell.cellTextField.text = Heroes[indexPath.row].bio
         cell.imageCell.image = Heroes[indexPath.row].pic
+        cell.layer.cornerRadius = 0
+        UIView.animate(withDuration: 1, animations: {
+           cell.layer.cornerRadius = 75
+        })
+        
         return cell
     }
     
@@ -60,6 +65,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         detailController.detailImage = Heroes[indexPath.row].pic
         
         navigationController?.show(detailController, sender: CardViewController.self)
+        
     }
     
     func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {
@@ -77,6 +83,10 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         view.addMotionEffect(motionEffectGroup)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+       
+    }
+    
     override func viewDidLoad() {
         
         Heroes.removeAll()
@@ -89,6 +99,10 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         Heroes.append(HawkEye)
         Heroes.append(BlackPanther)
         Heroes.append(BlackWidow)
+        UIView.animate(withDuration: 5, animations: {
+        
+            
+        })
         
         
         
