@@ -52,7 +52,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         cell.cellTextField.text = Heroes[indexPath.row].bio
         cell.imageCell.image = Heroes[indexPath.row].pic
         cell.layer.cornerRadius = 0
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 0.3, animations: {
            cell.layer.cornerRadius = 75
         })
         

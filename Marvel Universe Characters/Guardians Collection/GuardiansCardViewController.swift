@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
- var guardianHeroes = [Hero]()
+var guardianHeroes = [Hero]()
 
 class GuardiansCardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-   
+    
     
     let Groot = Hero(name: "Groot", bio: "Groot was extremely powerful and resilient, he has the power or regeneration allowing him to re-grow limbs and even his entire form. He also has powers of the mind, although they only appear to work on plant life, allowing him to communicate with other trees and command them to attack those that oppose him. He is highly vulnerable to attacks of fire.", pic: UIImage(named: "groot")!)
     
@@ -38,7 +38,20 @@ class GuardiansCardViewController: UIViewController, UICollectionViewDelegate, U
         cell.cellLabel.text = guardianHeroes[indexPath.row].name
         cell.cellTextField.text = guardianHeroes[indexPath.row].bio
         cell.imageCell.image = guardianHeroes[indexPath.row].pic
+        cell.layer.cornerRadius = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            cell.layer.cornerRadius = 75
+        })
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailController = storyboard?.instantiateViewController(withIdentifier: "GuardiansHeroController") as! GuardiansHeroController
+        
+        detailController.detailImage = guardianHeroes[indexPath.row].pic
+        
+        navigationController?.show(detailController, sender: collectionView)
+        
     }
     
     func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {

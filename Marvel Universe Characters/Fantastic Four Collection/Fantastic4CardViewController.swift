@@ -25,6 +25,7 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        myMotionEffect(view: collectionView, min: -30, max: 30)
         return Fantastic4Heroes.count
     }
     
@@ -36,6 +37,10 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
         cell.cellLabel.text = Fantastic4Heroes[indexPath.row].name
         cell.cellTextField.text = Fantastic4Heroes[indexPath.row].bio
         cell.imageCell.image = Fantastic4Heroes[indexPath.row].pic
+        cell.layer.cornerRadius = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            cell.layer.cornerRadius = 75
+        })
         return cell
     }
     
@@ -49,6 +54,21 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
         navigationController?.show(detailController, sender: collectionView)
         //navigationController?.pushViewController(detailController, animated: true)
       
+    }
+    
+    func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {
+        
+        let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
+        xMotion.minimumRelativeValue = min
+        xMotion.maximumRelativeValue = max
+        
+        let yMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.y", type: .tiltAlongVerticalAxis)
+        yMotion.minimumRelativeValue = min
+        yMotion.maximumRelativeValue = max
+        
+        let motionEffectGroup = UIMotionEffectGroup()
+        motionEffectGroup.motionEffects = [xMotion,yMotion]
+        view.addMotionEffect(motionEffectGroup)
     }
     
     func viewWillAppear() {

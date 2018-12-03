@@ -57,6 +57,10 @@ class XMenCardViewController: UIViewController, UICollectionViewDelegate, UIColl
         cell.cellLabel.text = XMenHeroes[indexPath.row].name
         cell.cellTextField.text = XMenHeroes[indexPath.row].bio
         cell.imageCell.image = XMenHeroes[indexPath.row].pic
+        cell.layer.cornerRadius = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            cell.layer.cornerRadius = 75
+        })
         return cell
     }
     
