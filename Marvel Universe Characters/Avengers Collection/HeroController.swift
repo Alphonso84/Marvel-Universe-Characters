@@ -31,8 +31,6 @@ class HeroController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-       
         detailBackGround.image = detailImage
         myMotionEffect(view: visualEffectView, min: -15, max: 15)
         myMotionEffect(view: detailBackGround, min: -60, max: 60)

@@ -53,7 +53,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         cell.imageCell.image = Heroes[indexPath.row].pic
         cell.layer.cornerRadius = 0
         UIView.animate(withDuration: 0.3, animations: {
-           cell.layer.cornerRadius = 75
+            cell.layer.cornerRadius = 75
         })
         
         return cell
@@ -86,7 +86,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     override func viewWillAppear(_ animated: Bool) {
-       
+        
     }
     
     override func viewDidLoad() {
@@ -102,7 +102,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         Heroes.append(BlackPanther)
         Heroes.append(BlackWidow)
         UIView.animate(withDuration: 5, animations: {
-        
+            
             
         })
         

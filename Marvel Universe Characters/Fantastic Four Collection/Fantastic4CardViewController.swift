@@ -32,7 +32,7 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
     //Cell Config
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-    let cell: FantasticCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FantasticCell
+        let cell: FantasticCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FantasticCell
         
         cell.cellLabel.text = Fantastic4Heroes[indexPath.row].name
         cell.cellTextField.text = Fantastic4Heroes[indexPath.row].bio
@@ -47,16 +47,12 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailController = storyboard?.instantiateViewController(withIdentifier: "FantasticFourHeroController") as! FantasticFourHeroController
         
-       detailController.title = "\(Fantastic4Heroes[indexPath.row].name)"
-        
-
+        detailController.title = "\(Fantastic4Heroes[indexPath.row].name)"
         detailController.detailImage = Fantastic4Heroes[indexPath.row].pic
     
-//        showDetailViewController(detailController, sender: collectionView)
-        
         navigationController?.show(detailController, sender: collectionView)
-        //navigationController?.pushViewController(detailController, animated: true)
-      
+       
+        
     }
     
     func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {
