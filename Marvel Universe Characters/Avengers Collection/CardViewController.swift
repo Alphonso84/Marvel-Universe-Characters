@@ -62,6 +62,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailController = storyboard?.instantiateViewController(withIdentifier: "HeroController") as! HeroController
         
+        detailController.title = "\(Heroes[indexPath.row].name)"
         detailController.detailImage = Heroes[indexPath.row].pic
         
         

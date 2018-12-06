@@ -47,7 +47,7 @@ class GuardiansCardViewController: UIViewController, UICollectionViewDelegate, U
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailController = storyboard?.instantiateViewController(withIdentifier: "GuardiansHeroController") as! GuardiansHeroController
-        
+        detailController.title = "\(guardianHeroes[indexPath.row].name)"
         detailController.detailImage = guardianHeroes[indexPath.row].pic
         
         navigationController?.show(detailController, sender: collectionView)

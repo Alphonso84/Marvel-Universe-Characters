@@ -67,6 +67,7 @@ class XMenCardViewController: UIViewController, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailController = storyboard?.instantiateViewController(withIdentifier: "XMenHeroController") as! XMenHeroController
         
+        detailController.title = "\(XMenHeroes[indexPath.row].name)"
         detailController.detailImage = XMenHeroes[indexPath.row].pic
         
 //        showDetailViewController(detailController, sender: collectionView)

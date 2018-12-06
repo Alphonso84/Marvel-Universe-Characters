@@ -47,6 +47,9 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailController = storyboard?.instantiateViewController(withIdentifier: "FantasticFourHeroController") as! FantasticFourHeroController
         
+       detailController.title = "\(Fantastic4Heroes[indexPath.row].name)"
+        
+
         detailController.detailImage = Fantastic4Heroes[indexPath.row].pic
     
 //        showDetailViewController(detailController, sender: collectionView)
