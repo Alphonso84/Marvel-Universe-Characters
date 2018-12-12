@@ -80,10 +80,6 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
         Fantastic4Heroes.append(InvisibleWoman)
         Fantastic4Heroes.append(HumanTorch)
         Fantastic4Heroes.append(Thing)
-        
-        
-        
-        
     }
     
 }
