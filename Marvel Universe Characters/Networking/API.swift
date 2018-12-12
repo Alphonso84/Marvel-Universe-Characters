@@ -18,7 +18,7 @@ class networking {
     
     let baseURL = "http://gateway.marvel.com/v1/public/characters?ts=1&apiKey="
     let publicKey = "6ca44bca53b6832171ee8b37947a8697&"
-    let privateKey = "8a24bc2ead5d9325e74fd1f7bbc8b59ae62c029f"
+    let privateKey = ""
     let hash = "557323f110756c55c73d9d7f0d455ec9"
     
     func getMarvelData() {
