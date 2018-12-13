@@ -16,7 +16,6 @@ struct Hero {
     
 }
 
-
 struct Marvel {
     let code: Int
     let status, copyright, attributionText, attributionHTML: String
