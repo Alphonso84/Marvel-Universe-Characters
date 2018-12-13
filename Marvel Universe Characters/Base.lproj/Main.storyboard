@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.26208984851837158" green="0.028527423739433289" blue="0.031603030860424042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.23433953523635864" green="0.025147674605250359" blue="0.029272280633449554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -373,7 +373,8 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dI7-Cy-d97" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="q45-mu-l2V">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="8KH-XN-qVs">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="MenuButton" style="plain" id="8KH-XN-qVs">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="600" maxY="0.0"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="Au0-XF-PJ6" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="YWn-Ky-Hfp"/>
@@ -396,7 +397,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9K-v0-5f7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1879" y="-226"/>
+            <point key="canvasLocation" x="-1946" y="-226"/>
         </scene>
         <!--XMen-->
         <scene sceneID="Xj2-T5-n0w">
@@ -790,7 +791,7 @@
         <image name="Fantastic4Icon" width="102.40000152587891" height="102.40000152587891"/>
         <image name="Marvel" width="1080" height="1920"/>
         <image name="Marvel Logo" width="1600" height="1136"/>
-        <image name="Menu" width="204.80000305175781" height="204.80000305175781"/>
+        <image name="MenuButton" width="500" height="500"/>
         <image name="Mr Fantastic" width="363.83999633789062" height="573.39129638671875"/>
         <image name="SpiderMan" width="1600" height="1263"/>
         <image name="Wolverine" width="1467" height="1561"/>
@@ -798,4 +799,5 @@
         <image name="groot" width="722" height="1107"/>
         <image name="guardianIcon" width="200" height="200"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

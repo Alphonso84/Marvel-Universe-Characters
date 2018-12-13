@@ -104,10 +104,19 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         UIView.animate(withDuration: 5, animations: {
             
         })
-        
-        Networking().getMarvelData()
-        
+        addNavBarImage()
     }
-    
+    func addNavBarImage() {
+        let navController = navigationController!
+        let image = UIImage(named: "Marvel")!
+        let imageView = UIImageView(image: image)
+        let bannerWidth = navController.navigationBar.frame.size.width
+        let bannerHeight = navController.navigationBar.frame.size.height
+        let bannerX = bannerWidth - image.size.width
+        let bannerY = bannerHeight - image.size.height
+        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+        navigationItem.titleView = imageView
+    }
 }
 

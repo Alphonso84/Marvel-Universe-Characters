@@ -13,7 +13,6 @@ struct Hero {
     var name: String
     var bio: String
     var pic: UIImage
-    
 }
 
 struct Marvel {
