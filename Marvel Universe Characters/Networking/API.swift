@@ -12,10 +12,6 @@ import UIKit
 
 class networking {
     
-    
-    
-    var apiHash: String = ""
-    
     let baseURL = "http://gateway.marvel.com/v1/public/characters?ts=1&apiKey="
     let publicKey = "6ca44bca53b6832171ee8b37947a8697&"
     let privateKey = ""
@@ -23,7 +19,29 @@ class networking {
     
     func getMarvelData() {
         let characterURL = "\(baseURL)\(publicKey)\(hash)"
+        let session = URLSession.shared
+
+        let task = session.dataTask(with: characterURL) { (data, response, error) in
+
+            guard let marvelData = data else {return}
+
+            do {
+                
+      //        let jsonDecoder = JSONDecoder()
+      //        let meowInfo = try jsonDecoder.decode(Array<MeowCards>.self, from: meowData)
+                let jsonData = try JSONSerialization.jsonObject(with: meowData, options: [])
+
+                MarvelInfo = jsonData
+
+            } catch {
+
+                print(error)
+            }
+        }
+        task.resume()
     }
-  
+    
+    
+    
     
 }
