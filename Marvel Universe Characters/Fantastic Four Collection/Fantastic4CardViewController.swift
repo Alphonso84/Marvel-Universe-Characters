@@ -70,11 +70,28 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
         view.addMotionEffect(motionEffectGroup)
     }
     
+    func addNavBarImage() {
+        let navController = navigationController!
+        let image = UIImage(named: "Marvel Logo")!
+        let imageView = UIImageView(image: image)
+        let bannerWidth = navController.navigationBar.frame.size.width
+        let bannerHeight = navController.navigationBar.frame.size.height
+        let bannerX = bannerWidth - image.size.width
+        let bannerY = bannerHeight - image.size.height
+        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+        navigationItem.titleView = imageView
+        
+        print("Called ADD NAVBAR IMAGE")
+    }
+    
     func viewWillAppear() {
         
     }
     
     override func viewDidLoad() {
+        addNavBarImage()
+       
         Fantastic4Heroes.removeAll()
         Fantastic4Heroes.append(MrFantastic)
         Fantastic4Heroes.append(InvisibleWoman)

@@ -86,11 +86,11 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+         
     }
     
     override func viewDidLoad() {
-        
+       // backGround.image = UIImage(named: "AvengersCellBackGround")
         Heroes.removeAll()
         Heroes.append(Spiderman)
         Heroes.append(Ironman)
@@ -101,22 +101,9 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         Heroes.append(HawkEye)
         Heroes.append(BlackPanther)
         Heroes.append(BlackWidow)
-        UIView.animate(withDuration: 5, animations: {
-            
-        })
-        addNavBarImage()
+        
     }
-    func addNavBarImage() {
-        let navController = navigationController!
-        let image = UIImage(named: "Marvel")!
-        let imageView = UIImageView(image: image)
-        let bannerWidth = navController.navigationBar.frame.size.width
-        let bannerHeight = navController.navigationBar.frame.size.height
-        let bannerX = bannerWidth - image.size.width
-        let bannerY = bannerHeight - image.size.height
-        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
-        imageView.contentMode = .scaleAspectFit
-        navigationItem.titleView = imageView
-    }
+    
+   
 }
 
