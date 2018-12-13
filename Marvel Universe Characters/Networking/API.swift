@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 
-class networking {
+class Networking {
+    
+    var MarvelInfo = [Any]()
     
     let baseURL = "http://gateway.marvel.com/v1/public/characters?ts=1&apiKey="
     let publicKey = "6ca44bca53b6832171ee8b37947a8697&"
@@ -18,20 +20,18 @@ class networking {
     let hash = "557323f110756c55c73d9d7f0d455ec9"
     
     func getMarvelData() {
-        let characterURL = "\(baseURL)\(publicKey)\(hash)"
+        let characterURL = URL(string: "\(baseURL)\(publicKey)\(hash)")
+        print(characterURL)
         let session = URLSession.shared
-
-        let task = session.dataTask(with: characterURL) { (data, response, error) in
-
+        let task = session.dataTask(with: characterURL!) { (data, response, error) in
+            
             guard let marvelData = data else {return}
 
             do {
-                
-      //        let jsonDecoder = JSONDecoder()
-      //        let meowInfo = try jsonDecoder.decode(Array<MeowCards>.self, from: meowData)
-                let jsonData = try JSONSerialization.jsonObject(with: meowData, options: [])
-
-                MarvelInfo = jsonData
+            
+                let jsonData = try JSONSerialization.jsonObject(with: marvelData, options: [])
+                    print(jsonData)
+                self.MarvelInfo = [jsonData]
 
             } catch {
 

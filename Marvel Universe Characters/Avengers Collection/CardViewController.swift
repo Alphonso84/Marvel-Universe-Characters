@@ -103,10 +103,9 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         Heroes.append(BlackWidow)
         UIView.animate(withDuration: 5, animations: {
             
-            
         })
         
-        
+        Networking().getMarvelData()
         
     }
     
