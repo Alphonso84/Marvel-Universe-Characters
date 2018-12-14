@@ -70,8 +70,8 @@ class XMenCardViewController: UIViewController, UICollectionViewDelegate, UIColl
         detailController.title = "\(XMenHeroes[indexPath.row].name)"
         detailController.detailImage = XMenHeroes[indexPath.row].pic
         heroSelected = detailController.title!
-        Networking().getMarvelData()
         navigationController?.show(detailController, sender: collectionView)
+        Networking().getMarvelData()
     }
     
     func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {

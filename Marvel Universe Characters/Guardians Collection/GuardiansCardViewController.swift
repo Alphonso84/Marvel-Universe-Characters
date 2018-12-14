@@ -52,9 +52,8 @@ class GuardiansCardViewController: UIViewController, UICollectionViewDelegate, U
         detailController.title = "\(guardianHeroes[indexPath.row].name)"
         detailController.detailImage = guardianHeroes[indexPath.row].pic
         heroSelected = detailController.title!
-        Networking().getMarvelData()
         navigationController?.show(detailController, sender: collectionView)
-        
+        Networking().getMarvelData()
     }
     
     func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {

@@ -51,8 +51,8 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
         detailController.title = "\(Fantastic4Heroes[indexPath.row].name)"
         detailController.detailImage = Fantastic4Heroes[indexPath.row].pic
         heroSelected = detailController.title!
-        Networking().getMarvelData()
         navigationController?.show(detailController, sender: collectionView)
+        Networking().getMarvelData()
         
         
     }
