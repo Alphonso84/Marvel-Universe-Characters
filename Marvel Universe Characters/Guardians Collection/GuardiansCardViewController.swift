@@ -51,7 +51,8 @@ class GuardiansCardViewController: UIViewController, UICollectionViewDelegate, U
         let detailController = storyboard?.instantiateViewController(withIdentifier: "GuardiansHeroController") as! GuardiansHeroController
         detailController.title = "\(guardianHeroes[indexPath.row].name)"
         detailController.detailImage = guardianHeroes[indexPath.row].pic
-        
+        heroSelected = detailController.title!
+        Networking().getMarvelData()
         navigationController?.show(detailController, sender: collectionView)
         
     }

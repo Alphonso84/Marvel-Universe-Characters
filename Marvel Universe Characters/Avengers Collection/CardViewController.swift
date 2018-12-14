@@ -15,7 +15,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     let Thor = Hero(name: "Thor", bio: "As the son of Odin and Gaea, Thor's strength, endurance and resistance to injury are greater than the vast majority of his superhuman race. He is extremely long-lived (though not completely immune to aging), immune to conventional disease and highly resistant to injury. His flesh and bones are several times denser than a human's.As Lord of Asgard, Thor possessed the Odinforce, which enabled him to tap into the near-infinite resources of cosmic and mystical energies, enhancing all of his abilities. With the vast magical power of the Odinforce, Thor was even able to dent Captain America’s virtually indestructible shield with Mjolnir.", pic: #imageLiteral(resourceName: "Thor"))
     
-    let Spiderman = Hero(name: "Spider Man", bio: "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.", pic: #imageLiteral(resourceName: "SpiderMan"))
+    let Spiderman = Hero(name: "Spider-Man", bio: "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.", pic: #imageLiteral(resourceName: "SpiderMan"))
     
     let Ironman = Hero(name: "Iron Man", bio: "Wounded, captured and forced to build a weapon by his enemies, billionaire industrialist Tony Stark instead created an advanced suit of armor to save his life and escape captivity. Now with a new outlook on life, Tony uses his money and intelligence to make the world a safer, better place as Iron Man.", pic: #imageLiteral(resourceName: "IronMan"))
     
@@ -64,10 +64,10 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         detailController.title = "\(Heroes[indexPath.row].name)"
         detailController.detailImage = Heroes[indexPath.row].pic
-        
-        
+        heroSelected = detailController.title!
+       
         navigationController?.show(detailController, sender: CardViewController.self)
-        
+         Networking().getMarvelData()
     }
     
     func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {
