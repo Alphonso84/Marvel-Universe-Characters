@@ -19,7 +19,7 @@ class GuardiansCardViewCell: UICollectionViewCell {
         viewDidLayoutSubviews()
     }
     
-   
+    
     func viewDidLayoutSubviews() {
         cellTextField.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
     }

@@ -13,7 +13,7 @@ import UIKit
 class Networking {
     
     var MarvelInfo = [Any]()
-  
+    
     let baseURL = "http://gateway.marvel.com/v1/public/characters?ts=1&"
     let publicKey = "apikey=6ca44bca53b6832171ee8b37947a8697&"
     let privateKey = ""
@@ -28,15 +28,15 @@ class Networking {
         let task = session.dataTask(with: characterURL!) { (data, response, error) in
             print("Start")
             guard let marvelData = data else {return}
-
-            do {
             
+            do {
+                
                 let jsonData = try JSONSerialization.jsonObject(with: marvelData, options: [])
-                    print(jsonData)
+                print(jsonData)
                 self.MarvelInfo = [jsonData]
-
+                
             } catch {
-
+                
                 print(error)
             }
         }

@@ -11,7 +11,7 @@ import UIKit
 
 
 class XMenHeroController: UIViewController {
-     @IBOutlet weak var visualEffectView: UIVisualEffectView!
+    @IBOutlet weak var visualEffectView: UIVisualEffectView!
     @IBOutlet weak var detailBackGround: UIImageView!
     
     var detailImage = UIImage()

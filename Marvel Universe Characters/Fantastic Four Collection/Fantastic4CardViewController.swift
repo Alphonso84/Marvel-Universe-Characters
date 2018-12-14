@@ -72,6 +72,7 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
         view.addMotionEffect(motionEffectGroup)
     }
     
+    //Not Working Look Into implementation
     func addNavBarImage() {
         let navController = navigationController!
         let image = UIImage(named: "Marvel Logo")!
@@ -93,7 +94,7 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
     
     override func viewDidLoad() {
         addNavBarImage()
-       
+        
         Fantastic4Heroes.removeAll()
         Fantastic4Heroes.append(MrFantastic)
         Fantastic4Heroes.append(InvisibleWoman)

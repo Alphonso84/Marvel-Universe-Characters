@@ -85,11 +85,11 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     override func viewWillAppear(_ animated: Bool) {
-         
+        
     }
     
     override func viewDidLoad() {
-       // backGround.image = UIImage(named: "AvengersCellBackGround")
+        // backGround.image = UIImage(named: "AvengersCellBackGround")
         Heroes.removeAll()
         Heroes.append(Spiderman)
         Heroes.append(Ironman)
@@ -103,6 +103,6 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
     }
     
-   
+    
 }
 
