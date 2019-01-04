@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+//MODELS FOR ALL DATA
+
 struct Hero {
     var name: String
     var bio: String
