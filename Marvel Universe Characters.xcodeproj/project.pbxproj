@@ -27,6 +27,7 @@
 		898BD40B1FFFA095003B77B5 /* XMenCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BD40A1FFFA095003B77B5 /* XMenCardViewCell.swift */; };
 		89B059D220D3B72A00DFA515 /* GaurdiansCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B059D120D3B72A00DFA515 /* GaurdiansCardViewCell.swift */; };
 		89B059D420D3B73D00DFA515 /* GaurdiansController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B059D320D3B73D00DFA515 /* GaurdiansController.swift */; };
+		89B8B54E21E27E8B00341AEA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B8B54D21E27E8B00341AEA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		898BD40A1FFFA095003B77B5 /* XMenCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMenCardViewCell.swift; sourceTree = "<group>"; };
 		89B059D120D3B72A00DFA515 /* GaurdiansCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaurdiansCardViewCell.swift; sourceTree = "<group>"; };
 		89B059D320D3B73D00DFA515 /* GaurdiansController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaurdiansController.swift; sourceTree = "<group>"; };
+		89B8B54D21E27E8B00341AEA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				89586A3E1FFCCEA200313FEA /* Model.swift */,
+				89B8B54D21E27E8B00341AEA /* Extensions.swift */,
 				8921E1701FFE186900752987 /* Model.xcdatamodeld */,
 			);
 			path = Model;
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89586A3F1FFCCEA200313FEA /* Model.swift in Sources */,
+				89B8B54E21E27E8B00341AEA /* Extensions.swift in Sources */,
 				89586A2F1FFCC19A00313FEA /* CardViewController.swift in Sources */,
 				893312A52060070800CB6A2B /* Menu.swift in Sources */,
 				8921E1741FFEB39E00752987 /* HeroController.swift in Sources */,

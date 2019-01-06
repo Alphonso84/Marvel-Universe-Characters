@@ -23,19 +23,6 @@ class XMenHeroController: UIViewController {
         myMotionEffect(view: detailBackGround, min: -60, max: 60)
     }
     
-    func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {
-        
-        let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
-        xMotion.minimumRelativeValue = min
-        xMotion.maximumRelativeValue = max
-        
-        let yMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.y", type: .tiltAlongVerticalAxis)
-        yMotion.minimumRelativeValue = min
-        yMotion.maximumRelativeValue = max
-        
-        let motionEffectGroup = UIMotionEffectGroup()
-        motionEffectGroup.motionEffects = [xMotion,yMotion]
-        view.addMotionEffect(motionEffectGroup)
-    }
+    
     
 }

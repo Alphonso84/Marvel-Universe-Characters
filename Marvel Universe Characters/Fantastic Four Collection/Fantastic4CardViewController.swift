@@ -27,6 +27,7 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         myMotionEffect(view: collectionView, min: -30, max: 30)
+       
         return Fantastic4Heroes.count
     }
     
@@ -56,22 +57,7 @@ class FantasticFourCardViewController: UIViewController, UICollectionViewDelegat
         
         
     }
-    
-    func myMotionEffect(view: UIView, min: CGFloat, max: CGFloat) {
         
-        let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
-        xMotion.minimumRelativeValue = min
-        xMotion.maximumRelativeValue = max
-        
-        let yMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.y", type: .tiltAlongVerticalAxis)
-        yMotion.minimumRelativeValue = min
-        yMotion.maximumRelativeValue = max
-        
-        let motionEffectGroup = UIMotionEffectGroup()
-        motionEffectGroup.motionEffects = [xMotion,yMotion]
-        view.addMotionEffect(motionEffectGroup)
-    }
-    
     //Not Working Look Into implementation
     func addNavBarImage() {
         let navController = navigationController!
