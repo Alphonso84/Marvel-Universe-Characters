@@ -11,10 +11,15 @@ import UIKit
 
 //MODELS FOR ALL DATA
 
-struct Hero {
-    var name: String
-    var bio: String
-    var pic: UIImage
+struct Hero: Equatable {
+    
+    var name = String()
+    var bio = String()
+    var pic = UIImage()
+    func addToArray(array: inout [Hero]){
+         (array.append(self))
+    }
+    
 }
 
 struct Marvel {
@@ -93,5 +98,3 @@ enum URLType {
     case detail
     case wiki
 }
-
-

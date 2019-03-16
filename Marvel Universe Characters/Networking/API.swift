@@ -23,7 +23,7 @@ class Networking {
     func getMarvelData() {
         
         let characterURL = URL(string:"\(baseURL)\(characterName)\(publicKey)\(hash)")
-        //print(characterURL!)
+        print(characterURL!)
         let session = URLSession.shared
         let task = session.dataTask(with: characterURL!) { (data, response, error) in
             print("Start")
