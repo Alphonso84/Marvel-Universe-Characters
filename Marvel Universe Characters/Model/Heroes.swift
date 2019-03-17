@@ -9,10 +9,7 @@
 import Foundation
 import UIKit
 
-var Avengers = [Hero]()
-var Xmen = [Hero]()
-var FantasticFour = [Hero]()
-var Guardians = [Hero]()
+
 
 let Thor = Hero(name: "Thor", bio: "As the son of Odin and Gaea, Thor's strength, endurance and resistance to injury are greater than the vast majority of his superhuman race. He is extremely long-lived (though not completely immune to aging), immune to conventional disease and highly resistant to injury. His flesh and bones are several times denser than a human's.As Lord of Asgard, Thor possessed the Odinforce, which enabled him to tap into the near-infinite resources of cosmic and mystical energies, enhancing all of his abilities. With the vast magical power of the Odinforce, Thor was even able to dent Captain America’s virtually indestructible shield with Mjolnir.", pic: #imageLiteral(resourceName: "Thor"))
 

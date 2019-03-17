@@ -13,6 +13,7 @@ var heroSelected = String()
 
 class CardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    var characterArray = [Hero]()
    
     @IBOutlet weak var backGround: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -20,8 +21,8 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         myMotionEffect(view: collectionView, min: -30, max: 30)
-        let arrayController = Controller().getHeroArray(array: &Avengers)
-        return arrayController.count
+       
+        return characterArray.count
         
         
     }
@@ -30,11 +31,11 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: MyCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyCell
-        let arrayController = Controller().getHeroArray(array: &Avengers)
+       
         
-        cell.cellLabel.text = arrayController[indexPath.row].name
-        cell.cellTextField.text = arrayController[indexPath.row].bio
-        cell.imageCell.image = arrayController[indexPath.row].pic
+        cell.cellLabel.text = characterArray[indexPath.row].name
+        cell.cellTextField.text = characterArray[indexPath.row].bio
+        cell.imageCell.image = characterArray[indexPath.row].pic
         cell.layer.cornerRadius = 0
         UIView.animate(withDuration: 0.3, animations: {
             cell.layer.cornerRadius = 75
@@ -45,10 +46,10 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailController = storyboard?.instantiateViewController(withIdentifier: "HeroController") as! HeroController
-        let arrayController = Controller().getHeroArray(array: &Avengers)
+       
         
-        detailController.title = "\(arrayController[indexPath.row].name)"
-        detailController.detailImage = arrayController[indexPath.row].pic
+        detailController.title = "\(characterArray[indexPath.row].name)"
+        detailController.detailImage = characterArray[indexPath.row].pic
         heroSelected = detailController.title!
         navigationController?.show(detailController, sender: CardViewController.self)
         Networking().getMarvelData()
@@ -57,7 +58,7 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        characterArray = Controller().getHeroArray()
     }
     
     override func viewDidLoad() {

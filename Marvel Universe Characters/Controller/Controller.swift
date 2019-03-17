@@ -9,11 +9,18 @@
 import Foundation
 import UIKit
 
+
+
+var Avengers = [Hero]()
+var Xmen = [Hero]()
+var FantasticFour = [Hero]()
+var Guardians = [Hero]()
+
 class Controller {
     
 
-    func getHeroArray(array: inout [Hero]) -> [Hero] {
-        
+    func getHeroArray() -> [Hero] {
+       
         Avengers.append(CaptAmerica)
         Avengers.append(Thor)
         Avengers.append(Spiderman)
@@ -43,21 +50,7 @@ class Controller {
         FantasticFour.append(HumanTorch)
         FantasticFour.append(InvisibleWoman)
         FantasticFour.append(MrFantastic)
-        
-        
-        switch array {
-        case Avengers:
-            return Avengers
-        case Xmen:
-            return Xmen
-        case FantasticFour:
-            return FantasticFour
-        case Guardians:
-            return Guardians
-        default:
-            return array
-        }
-        
+        return Avengers
     }
     
     
