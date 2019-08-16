@@ -18,6 +18,10 @@ class MyCell: UICollectionViewCell {
         
     }
     
+    override func layoutSubviews() {
+       
+    }
+    
     func viewDidLoad() {
         viewDidLayoutSubviews()
         
@@ -26,5 +30,11 @@ class MyCell: UICollectionViewCell {
     
     func viewDidLayoutSubviews() {
         cellTextField.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
+        super.layoutSubviews()
+        layer.cornerRadius = 20
+        self.clipsToBounds = false
+        layer.shadowRadius = 10
+        layer.shadowOpacity = 0.3
+        layer.shadowOffset = CGSize(width: 5, height: 10)
     }
 }

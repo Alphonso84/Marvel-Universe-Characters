@@ -12,7 +12,7 @@ import CoreData
 var heroSelected = String()
 
 class CardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
+   
     var characterArray = [Hero]()
    
     @IBOutlet weak var backGround: UIImageView!
@@ -58,7 +58,8 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     override func viewWillAppear(_ animated: Bool) {
-        characterArray = Controller().getHeroArray()
+        
+        characterArray = Controller().getHeroArray(stringForHeroesArray: "Xmen")
     }
     
     override func viewDidLoad() {
