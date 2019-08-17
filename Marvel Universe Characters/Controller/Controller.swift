@@ -14,9 +14,10 @@ var Xmen = [Hero]()
 var Guardians = [Hero]()
 var FantasticFour = [Hero]()
 
-class Controller {
+class Controller:UITabBarController {
     
-
+    @IBOutlet weak var myTabBar: UITabBar!
+    
     func getHeroArray(stringForHeroesArray:String) -> [Hero] {
        
         Avengers.append(CaptAmerica)

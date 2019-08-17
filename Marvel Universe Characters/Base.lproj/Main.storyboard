@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mIf-HV-h9H">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mIf-HV-h9H">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -152,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1959" y="-226"/>
+            <point key="canvasLocation" x="-1743" y="-226"/>
         </scene>
         <!--HeroController-->
         <scene sceneID="cMg-80-baD">
@@ -213,10 +211,10 @@
             </objects>
             <point key="canvasLocation" x="-1026" y="-226"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Controller-->
         <scene sceneID="SRm-9Y-DSQ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dI7-Cy-d97" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="myTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dI7-Cy-d97" customClass="Controller" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="q45-mu-l2V">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="MenuButton" style="plain" id="8KH-XN-qVs">
@@ -235,6 +233,7 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="myTabBar" destination="h5a-M2-X9N" id="WQL-LZ-fJn"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="0m5-Cf-OSJ"/>
                     </connections>
                 </tabBarController>
@@ -247,16 +246,15 @@
             <objects>
                 <viewController id="Au0-XF-PJ6" customClass="Menu" customModule="Marvel_Universe_Characters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Izr-UC-X4V">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clearsContextBeforeDrawing="NO" alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZt-po-gKL">
+                            <view clearsContextBeforeDrawing="NO" alpha="0.89999997615814209" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bZt-po-gKL">
                                 <rect key="frame" x="0.0" y="49" width="296" height="719"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel Logo" translatesAutoresizingMaskIntoConstraints="NO" id="P0W-mT-xhL">
-                                        <rect key="frame" x="8" y="8" width="288" height="128"/>
+                                        <rect key="frame" x="8" y="8" width="1600" height="128"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="GQS-gq-wwo">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="GQS-gq-wwo">
                                         <rect key="frame" x="0.0" y="175" width="296" height="493"/>
                                     </stackView>
                                 </subviews>
@@ -300,11 +298,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AvengersIcon" width="102.40000152587891" height="102.40000152587891"/>
-        <image name="Marvel" width="1080" height="1920"/>
+        <image name="AvengersIcon" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="Marvel" width="360" height="640"/>
         <image name="Marvel Logo" width="1600" height="1136"/>
         <image name="MenuButton" width="500" height="500"/>
-        <image name="SpiderMan" width="1600" height="1263"/>
+        <image name="SpiderMan" width="533.33331298828125" height="421"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

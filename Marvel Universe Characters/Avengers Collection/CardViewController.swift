@@ -11,15 +11,34 @@ import CoreData
 
 var heroSelected = String()
 
-class CardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UITabBarDelegate {
    
+    var AvengersViewController = UIViewController()
+    var GuardiansViewController = UIViewController()
+    var FantasticFourViewController = UIViewController()
+    var XmenViewController = UIViewController()
     var characterArray = [Hero]()
    
+    let myTabBarController = UITabBarController(nibName: "myTabBarController", bundle:Bundle.main)
     @IBOutlet weak var backGround: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    func setupViews() {
+        AvengersViewController.title = "Avengers"
+        GuardiansViewController.title = "Guardians"
+        FantasticFourViewController.title = "FantasticFour"
+        XmenViewController.title = "Xmen"
+        AvengersViewController.tabBarItem = UITabBarItem(title: AvengersViewController.title, image: UIImage(named: "AvengersIcon"), tag: 0)
+        GuardiansViewController.tabBarItem = UITabBarItem(title: GuardiansViewController.title, image: UIImage(named:"guardianIcon"), tag: 1)
+        FantasticFourViewController.tabBarItem = UITabBarItem(title: FantasticFourViewController.title, image: UIImage(named:"Fantastic4Icon"), tag: 2)
+        XmenViewController.tabBarItem = UITabBarItem(title: XmenViewController.title, image: UIImage(named:"XmenIcon"), tag: 3)
+        
+        let controllers = [AvengersViewController, GuardiansViewController, FantasticFourViewController,XmenViewController]
+        myTabBarController.viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         myMotionEffect(view: collectionView, min: -30, max: 30)
        
         return characterArray.count
@@ -59,12 +78,12 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewWillAppear(_ animated: Bool) {
         
-        characterArray = Controller().getHeroArray(stringForHeroesArray: "Xmen")
+        characterArray = Controller().getHeroArray(stringForHeroesArray: "Guardians")
     }
     
     override func viewDidLoad() {
         // backGround.image = UIImage(named: "AvengersCellBackGround")
-       
+       setupViews()
         
     }
     
