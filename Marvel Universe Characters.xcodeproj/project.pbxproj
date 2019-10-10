@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89217DF3223C900600C48FDA /* Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89217DF2223C900600C48FDA /* Heroes.swift */; };
+		89217DF3223C900600C48FDA /* Heroes.json in Sources */ = {isa = PBXBuildFile; fileRef = 89217DF2223C900600C48FDA /* Heroes.json */; };
 		89217DF6223CA81A00C48FDA /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89217DF5223CA81A00C48FDA /* Controller.swift */; };
 		8921E16F1FFE051B00752987 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921E16E1FFE051B00752987 /* API.swift */; };
 		8921E1721FFE186900752987 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8921E1701FFE186900752987 /* Model.xcdatamodeld */; };
@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		89217DF2223C900600C48FDA /* Heroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroes.swift; sourceTree = "<group>"; };
+		89217DF2223C900600C48FDA /* Heroes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Heroes.json; sourceTree = "<group>"; };
 		89217DF5223CA81A00C48FDA /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		8921E16E1FFE051B00752987 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8921E1711FFE186900752987 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				89586A3E1FFCCEA200313FEA /* Model.swift */,
-				89217DF2223C900600C48FDA /* Heroes.swift */,
+				89217DF2223C900600C48FDA /* Heroes.json */,
 				89B8B54D21E27E8B00341AEA /* Extensions.swift */,
 				8921E1701FFE186900752987 /* Model.xcdatamodeld */,
 			);
@@ -202,7 +202,7 @@
 				8921E1741FFEB39E00752987 /* HeroController.swift in Sources */,
 				89586A411FFCD05A00313FEA /* CardViewCell.swift in Sources */,
 				89586A2D1FFCC19A00313FEA /* AppDelegate.swift in Sources */,
-				89217DF3223C900600C48FDA /* Heroes.swift in Sources */,
+				89217DF3223C900600C48FDA /* Heroes.json in Sources */,
 				89217DF6223CA81A00C48FDA /* Controller.swift in Sources */,
 				8921E16F1FFE051B00752987 /* API.swift in Sources */,
 				8921E1721FFE186900752987 /* Model.xcdatamodeld in Sources */,

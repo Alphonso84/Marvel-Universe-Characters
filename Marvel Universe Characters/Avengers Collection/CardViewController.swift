@@ -20,9 +20,10 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var characterArray = [Hero]()
    
     let myTabBarController = UITabBarController(nibName: "myTabBarController", bundle:Bundle.main)
+    
     @IBOutlet weak var backGround: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
-    
+  
     func setupViews() {
         AvengersViewController.title = "Avengers"
         GuardiansViewController.title = "Guardians"
